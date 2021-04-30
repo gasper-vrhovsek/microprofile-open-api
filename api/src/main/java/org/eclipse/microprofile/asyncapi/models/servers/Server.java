@@ -1,5 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.servers;
 
+import org.eclipse.microprofile.asyncapi.models.bindings.ServerBindings;
 import org.eclipse.microprofile.openapi.models.Constructible;
 import org.eclipse.microprofile.openapi.models.Extensible;
 import org.eclipse.microprofile.openapi.models.security.SecurityRequirement;
@@ -260,14 +261,14 @@ public interface Server extends Constructible, Extensible<Server> {
      *
      * @return server bindings for this server instance
      * */
-    Map<String, Object> getBindings();
+    ServerBindings getBindings();
 
     /**
      * Sets a map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the server.
      *
      * @param bindings server bindings for this server instance
      * */
-    void setBindings(Map<String, Object> bindings);
+    void setBindings(ServerBindings bindings);
 
     /**
      * Sets a map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the server.
@@ -275,7 +276,7 @@ public interface Server extends Constructible, Extensible<Server> {
      * @param bindings server bindings for this server instance
      * @return Server instance with the set bindings property
      * */
-    default Server bindings(Map<String, Object> bindings) {
+    default Server bindings(ServerBindings bindings) {
         setBindings(bindings);
         return this;
     }

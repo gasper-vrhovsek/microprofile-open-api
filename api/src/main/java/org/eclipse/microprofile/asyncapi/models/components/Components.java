@@ -7,7 +7,6 @@ import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.ServerBindings;
 import org.eclipse.microprofile.openapi.models.Constructible;
 import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Operation;
 import org.eclipse.microprofile.openapi.models.media.Schema;
 import org.eclipse.microprofile.openapi.models.security.SecurityScheme;
 
@@ -17,7 +16,7 @@ import java.util.Map;
  * Holds a set of reusable objects for different aspects of the AsyncAPI specification.
  * All objects defined within the components object will have no effect on the API unless they are explicitly referenced
  * from properties outside the components object.
- * */
+ */
 public interface Components extends Constructible, Extensible<Components> {
 
     /**
@@ -48,7 +47,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given schema to this Components' list of schemas with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key    a key conforming to the format required for this object
      * @param schema a reusable schema object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object
      */
@@ -65,14 +64,14 @@ public interface Components extends Constructible, Extensible<Components> {
      * Returns messages property from a Components instance.
      *
      * @return a copy Map containing the keys and the defined messages for this AsyncAPI document
-     * */
+     */
     Map<String, Message> getMessages();
 
     /**
      * Sets messages property to a Components instance.
      *
      * @param messages a Map containing the keys and defined messages for this AsyncAPI document
-     * */
+     */
     void setMessages(Map<String, Message> messages);
 
     /**
@@ -80,7 +79,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param messages a Map containing the keys and defined messages for this AsyncAPI document
      * @return the current Components object
-     * */
+     */
     default Components messages(Map<String, Message> messages) {
         setMessages(messages);
         return this;
@@ -89,7 +88,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given message to this Components' list of messages with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key     a key conforming to the format required for this object
      * @param message a reusable message object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object
      */
@@ -130,7 +129,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given security scheme to this Components' map of security schemes with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key            a key conforming to the format required for this object
      * @param securityScheme a reusable security scheme object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the securityScheme property set
      */
@@ -171,7 +170,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given parameter to this Components' map of parameters with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key       a key conforming to the format required for this object
      * @param parameter a reusable parameter object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the parameter property added
      */
@@ -237,7 +236,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given operationTrait to this Components' map of operationTraits with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key            a key conforming to the format required for this object
      * @param operationTrait a reusable operationTrait object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the operationTrait property added
      */
@@ -278,7 +277,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given messageTrait to this Components' map of messageTraits with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key          a key conforming to the format required for this object
      * @param messageTrait a reusable messageTrait object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
@@ -295,14 +294,14 @@ public interface Components extends Constructible, Extensible<Components> {
      * Returns an object that holds reusable Server Bindings Objects
      *
      * @return Map of ServerBinding objects
-     * */
+     */
     Map<String, ServerBindings> getServerBindings();
 
     /**
      * Sets an object that holds reusable Server Bindings Objects
      *
      * @param serverBindings Map of ServerBinding objects
-     * */
+     */
     void setServerBindings(Map<String, ServerBindings> serverBindings);
 
     /**
@@ -310,7 +309,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param serverBindings Map of ServerBinding objects
      * @return the current Components object with the serverBindings property set
-     * */
+     */
     default Components serverBindings(Map<String, ServerBindings> serverBindings) {
         setServerBindings(serverBindings);
         return this;
@@ -319,7 +318,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given serverBinding to this Components' map of serverBindings with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key           a key conforming to the format required for this object
      * @param serverBinding a reusable serverBinding object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
@@ -336,14 +335,14 @@ public interface Components extends Constructible, Extensible<Components> {
      * Returns an object that holds reusable Server Bindings Objects
      *
      * @return Map of ChannelBinding objects
-     * */
+     */
     Map<String, ChannelBindings> getChannelBindings();
 
     /**
      * Sets an object that holds reusable Server Bindings Objects
      *
      * @param channelBindings Map of ChannelBinding objects
-     * */
+     */
     void setChannelBindings(Map<String, ChannelBindings> channelBindings);
 
     /**
@@ -351,7 +350,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param channelBindings Map of ChannelBinding objects
      * @return the current Components object with the channelBindings property set
-     * */
+     */
     default Components channelBindings(Map<String, ChannelBindings> channelBindings) {
         setChannelBindings(channelBindings);
         return this;
@@ -360,7 +359,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given channelBinding to this Components' map of channelBindings with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key            a key conforming to the format required for this object
      * @param channelBinding a reusable channelBinding object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
@@ -377,14 +376,14 @@ public interface Components extends Constructible, Extensible<Components> {
      * Returns an object that holds reusable Server Bindings Objects
      *
      * @return Map of OperationBinding objects
-     * */
+     */
     Map<String, OperationBindings> getOperationBindings();
 
     /**
      * Sets an object that holds reusable Server Bindings Objects
      *
      * @param operationBindings Map of OperationBinding objects
-     * */
+     */
     void setOperationBindings(Map<String, OperationBindings> operationBindings);
 
     /**
@@ -392,7 +391,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param operationBindings Map of OperationBinding objects
      * @return the current Components object with the operationBindings property set
-     * */
+     */
     default Components operationBindings(Map<String, OperationBindings> operationBindings) {
         setOperationBindings(operationBindings);
         return this;
@@ -401,7 +400,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given operationBinding to this Components' map of operationBindings with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key              a key conforming to the format required for this object
      * @param operationBinding a reusable operationBinding object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
@@ -418,14 +417,14 @@ public interface Components extends Constructible, Extensible<Components> {
      * Returns an object that holds reusable Server Bindings Objects
      *
      * @return Map of MessageBinding objects
-     * */
+     */
     Map<String, MessageBindings> getMessageBindings();
 
     /**
      * Sets an object that holds reusable Server Bindings Objects
      *
      * @param messageBindings Map of MessageBinding objects
-     * */
+     */
     void setMessageBindings(Map<String, MessageBindings> messageBindings);
 
     /**
@@ -433,7 +432,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param messageBindings Map of MessageBinding objects
      * @return the current Components object with the messageBindings property set
-     * */
+     */
     default Components messageBindings(Map<String, MessageBindings> messageBindings) {
         setMessageBindings(messageBindings);
         return this;
@@ -442,7 +441,7 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Adds the given messageBinding to this Components' map of messageBindings with the given string as its key.
      *
-     * @param key a key conforming to the format required for this object
+     * @param key            a key conforming to the format required for this object
      * @param messageBinding a reusable messageBinding object. null values will be rejected (implementation will throw an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
