@@ -9,6 +9,7 @@ import org.eclipse.microprofile.openapi.models.Reference;
  * Map describing protocol-specific definitions for a server.
  * */
 public interface ServerBindings extends Constructible, Extensible<ServerBindings>, Reference<ServerBindings> {
+    // TODO check if we should just remove EmptyBindings placeholders
 
     /**
      * Returns protocol-specific information for an HTTP server.

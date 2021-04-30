@@ -1,4 +1,6 @@
 package org.eclipse.microprofile.asyncapi.annotations.bindings.channel;
 
-public @interface WebsocketBindings {
+public @interface WebsocketsBindings {
+    // TODO
+
 }
