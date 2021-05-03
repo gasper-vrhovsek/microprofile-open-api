@@ -186,21 +186,24 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Returns the correlationIds property from a Components instance.
      *
-     * @return a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API operations for this AsyncAPI document
+     * @return a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API operations for
+     * this AsyncAPI document
      **/
     Map<String, CorrelationId> getCorrelationIds();
 
     /**
      * Sets the correlationIds property from a Components instance.
      *
-     * @param correlationIds a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API operations for this AsyncAPI document
+     * @param correlationIds a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API
+     *                       operations for this AsyncAPI document
      **/
     void setCorrelationIds(Map<String, CorrelationId> correlationIds);
 
     /**
      * Sets the correlationIds property from a Components instance.
      *
-     * @param correlationIds a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API operations for this AsyncAPI document
+     * @param correlationIds a copy Map (potentially immutable) containing the keys and the reusable correlationIds of API
+     *                       operations for this AsyncAPI document
      * @return the current Components object with the correlationIds property set
      **/
     default Components correlationIds(Map<String, CorrelationId> correlationIds) {
@@ -211,21 +214,24 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Returns the operationTraits property from a Components instance.
      *
-     * @return a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API operations for this AsyncAPI document
+     * @return a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API operations
+     * for this AsyncAPI document
      **/
     Map<String, OperationTrait> getOperationTraits();
 
     /**
      * Sets the operationTraits property from a Components instance.
      *
-     * @param operationTraits a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API operations for this AsyncAPI document
+     * @param operationTraits a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API
+     *                        operations for this AsyncAPI document
      **/
     void setOperationTraits(Map<String, OperationTrait> operationTraits);
 
     /**
      * Sets the operationTraits property from a Components instance.
      *
-     * @param operationTraits a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API operations for this AsyncAPI document
+     * @param operationTraits a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API
+     *                        operations for this AsyncAPI document
      * @return the current Components object with the correlationIds property set
      **/
     default Components operationTraits(Map<String, OperationTrait> operationTraits) {
@@ -237,7 +243,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given operationTrait to this Components' map of operationTraits with the given string as its key.
      *
      * @param key            a key conforming to the format required for this object
-     * @param operationTrait a reusable operationTrait object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param operationTrait a reusable operationTrait object. null values will be rejected (implementation will throw
+     *                       an exception) or ignored.
      * @return the current Components object with the operationTrait property added
      */
     Components addOperationTrait(String key, OperationTrait operationTrait);
@@ -252,21 +259,24 @@ public interface Components extends Constructible, Extensible<Components> {
     /**
      * Returns the messageTraits property from a Components instance.
      *
-     * @return a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API operations for this AsyncAPI document
+     * @return a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API operations for
+     * this AsyncAPI document
      **/
     Map<String, MessageTrait> getMessageTraits();
 
     /**
      * Sets the messageTraits property from a Components instance.
      *
-     * @param messageTraits a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API operations for this AsyncAPI document
+     * @param messageTraits a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API
+     *                      operations for this AsyncAPI document
      **/
     void setMessageTraits(Map<String, MessageTrait> messageTraits);
 
     /**
      * Sets the messageTraits property from a Components instance.
      *
-     * @param messageTraits a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API operations for this AsyncAPI document
+     * @param messageTraits a copy Map (potentially immutable) containing the keys and the reusable messageTraits of API
+     *                      operations for this AsyncAPI document
      * @return the current Components object with the messageTraits property set
      **/
     default Components messageTraits(Map<String, MessageTrait> messageTraits) {
@@ -278,7 +288,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given messageTrait to this Components' map of messageTraits with the given string as its key.
      *
      * @param key          a key conforming to the format required for this object
-     * @param messageTrait a reusable messageTrait object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param messageTrait a reusable messageTrait object. null values will be rejected (implementation will throw an
+     *                     exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
     Components addMessageTrait(String key, MessageTrait messageTrait);
@@ -319,7 +330,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given serverBinding to this Components' map of serverBindings with the given string as its key.
      *
      * @param key           a key conforming to the format required for this object
-     * @param serverBinding a reusable serverBinding object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param serverBinding a reusable serverBinding object. null values will be rejected (implementation will throw an
+     *                      exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
     Components addServerBinding(String key, ServerBindings serverBinding);
@@ -360,7 +372,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given channelBinding to this Components' map of channelBindings with the given string as its key.
      *
      * @param key            a key conforming to the format required for this object
-     * @param channelBinding a reusable channelBinding object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param channelBinding a reusable channelBinding object. null values will be rejected (implementation will throw
+     *                       an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
     Components addChannelBinding(String key, ChannelBindings channelBinding);
@@ -401,7 +414,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given operationBinding to this Components' map of operationBindings with the given string as its key.
      *
      * @param key              a key conforming to the format required for this object
-     * @param operationBinding a reusable operationBinding object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param operationBinding a reusable operationBinding object. null values will be rejected (implementation will throw
+     *                         an exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
     Components addOperationBinding(String key, OperationBindings operationBinding);
@@ -442,7 +456,8 @@ public interface Components extends Constructible, Extensible<Components> {
      * Adds the given messageBinding to this Components' map of messageBindings with the given string as its key.
      *
      * @param key            a key conforming to the format required for this object
-     * @param messageBinding a reusable messageBinding object. null values will be rejected (implementation will throw an exception) or ignored.
+     * @param messageBinding a reusable messageBinding object. null values will be rejected (implementation will throw an
+     *                       exception) or ignored.
      * @return the current Components object with the messageTrait property added
      */
     Components addMessageBinding(String key, MessageBindings messageBinding);

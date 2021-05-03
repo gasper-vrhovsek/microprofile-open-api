@@ -1,6 +1,5 @@
 package org.eclipse.microprofile.asyncapi.models.components;
 
-import org.eclipse.microprofile.asyncapi.models.Operation;
 import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
 import org.eclipse.microprofile.openapi.models.Constructible;
 import org.eclipse.microprofile.openapi.models.Extensible;
@@ -11,10 +10,12 @@ import org.eclipse.microprofile.openapi.models.tags.Tag;
 /**
  * Describes a trait that MAY be applied to an
  * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#operationObject">Operation Object</a>.
- * This object MAY contain any property from the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#operationObject">Operation Object</a>,
+ * This object MAY contain any property from the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#operationObject">
+ * Operation Object</a>,
  * except message and traits.
  * <p>
- * If you're looking to apply traits to a message, see the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageTraitObject">Message Trait Object</a>.
+ * If you're looking to apply traits to a message, see the
+ * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageTraitObject">Message Trait Object</a>.
  *
  * @see org.eclipse.microprofile.asyncapi.models.components.MessageTrait
  */
@@ -159,7 +160,7 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
      * for the operation.
      *
      * @return bindings property
-     * */
+     */
     OperationBindings getBindings();
 
     /**
@@ -167,7 +168,7 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
      * for the operation.
      *
      * @param bindings bindings property
-     * */
+     */
     void setBindings(OperationBindings bindings);
 
     /**
@@ -176,7 +177,7 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
      *
      * @param bindings bindings property
      * @return OperationTrait instance with the bindings property set
-     * */
+     */
     default OperationTrait bingings(OperationBindings bindings) {
         setBindings(bindings);
         return this;

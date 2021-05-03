@@ -65,7 +65,8 @@ public interface Parameter extends Constructible, Extensible<Parameter>, Referen
 
     /**
      * Returns a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#runtimeExpression">runtime expression</a>
-     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate this parameter but, instead, the schema property MUST be used.
+     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate
+     * this parameter but, instead, the schema property MUST be used.
      *
      * @return location property
      * */
@@ -73,7 +74,8 @@ public interface Parameter extends Constructible, Extensible<Parameter>, Referen
 
     /**
      * Sets a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#runtimeExpression">runtime expression</a>
-     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate this parameter but, instead, the schema property MUST be used.
+     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate
+     * this parameter but, instead, the schema property MUST be used.
      *
      * @param location location property
      * */
@@ -81,7 +83,8 @@ public interface Parameter extends Constructible, Extensible<Parameter>, Referen
 
     /**
      * Sets a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#runtimeExpression">runtime expression</a>
-     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate this parameter but, instead, the schema property MUST be used.
+     * that specifies the location of the parameter value. Even when a definition for the target field exists, it MUST NOT be used to validate
+     * this parameter but, instead, the schema property MUST be used.
      *
      * @param location location property
      * @return Parameter instance with set location property

@@ -1,9 +1,11 @@
 package org.eclipse.microprofile.asyncapi.models.identifier;
 
 /**
- * This field represents a unique universal identifier of the application the AsyncAPI document is defining. It must conform to the URI format, according to RFC3986.
+ * This field represents a unique universal identifier of the application the AsyncAPI document is defining. It must conform to the URI format,
+ * according to RFC3986.
  *
- * It is RECOMMENDED to use a URN to globally and uniquely identify the application during long periods of time, even after it becomes unavailable or ceases to exist.
+ * It is RECOMMENDED to use a URN to globally and uniquely identify the application during long periods of time, even after it becomes unavailable or
+ * ceases to exist.
  *
  * @see "https://www.asyncapi.com/docs/specifications/2.0.0#A2SIdString"
  */

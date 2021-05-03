@@ -10,7 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * An object representing a message broker, a server or any other kind of computer program capable of sending and/or receiving data. This object is used to capture details such as URIs, protocols and security configuration. Variable substitution can be used so that some details, for example usernames and passwords, can be injected by code generation tools.
+ * An object representing a message broker, a server or any other kind of computer program capable of sending and/or receiving data. This object is
+ * used to capture details such as URIs, protocols and security configuration. Variable substitution can be used so that some details, for example
+ * usernames and passwords, can be injected by code generation tools.
  *
  * @see <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#serverObject">Server Object</a>
  */

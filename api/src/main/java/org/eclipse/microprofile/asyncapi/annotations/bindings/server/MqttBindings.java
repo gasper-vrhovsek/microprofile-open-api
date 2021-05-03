@@ -2,7 +2,12 @@ package org.eclipse.microprofile.asyncapi.annotations.bindings.server;
 
 import org.eclipse.microprofile.asyncapi.annotations.bindings.server.mqtt.LastWill;
 
-import java.lang.annotation.*;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 
 /**
  * This object contains information about the server representation in MQTT.

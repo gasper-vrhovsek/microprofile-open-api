@@ -189,7 +189,8 @@ public interface AsyncAPI extends Constructible, Extensible<AsyncAPI> {
      * </p>
      * <p>
      * Relative paths to individual channels MUST be in the form of a <a href="https://tools.ietf.org/html/rfc6570">RFC 6570 URI template</a>.
-     * Query parameters and fragments SHALL NOT be used. Instead use <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
+     * Query parameters and fragments SHALL NOT be used. Instead use
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
      * </p>
      * @return a map of channel objects
      * */
@@ -203,7 +204,8 @@ public interface AsyncAPI extends Constructible, Extensible<AsyncAPI> {
      * </p>
      * <p>
      * Relative paths to individual channels MUST be in the form of a <a href="https://tools.ietf.org/html/rfc6570">RFC 6570 URI template</a>.
-     * Query parameters and fragments SHALL NOT be used. Instead use <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
+     * Query parameters and fragments SHALL NOT be used. Instead use
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
      * </p>
      * @param channels a map of channel objects
      * */
@@ -217,7 +219,8 @@ public interface AsyncAPI extends Constructible, Extensible<AsyncAPI> {
      * </p>
      * <p>
      * Relative paths to individual channels MUST be in the form of a <a href="https://tools.ietf.org/html/rfc6570">RFC 6570 URI template</a>.
-     * Query parameters and fragments SHALL NOT be used. Instead use <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
+     * Query parameters and fragments SHALL NOT be used. Instead use
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#channelBindingsObject">bindings</a> to define them.
      * </p>
      * @param channels a map of channel objects
      * @return the current AsyncAPI object

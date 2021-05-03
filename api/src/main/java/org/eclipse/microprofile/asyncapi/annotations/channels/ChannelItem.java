@@ -4,7 +4,13 @@ import org.eclipse.microprofile.asyncapi.annotations.Operation;
 import org.eclipse.microprofile.asyncapi.annotations.Parameter;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.ChannelBindings;
 
-import java.lang.annotation.*;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Repeatable;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 
 /**
  * A representation of a channel. Describes the operation ovailable on a singe channel.

@@ -98,36 +98,45 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
 
     /**
      * Returns a string containing the name of the schema format used to define the message payload. If omitted,
-     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">Schema object</a>.
-     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">supported schema formats table</a>
+     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">
+     * Schema object</a>.
+     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">
+     * supported schema formats table</a>
      * for more information. Custom values are allowed but their implementation is OPTIONAL. A custom value MUST NOT refer
-     * to one of the schema formats listed in the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
+     * to one of the schema formats listed in the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
      *
      * @return schemaFormat property
-     * */
+     */
     String getSchemaFormat();
 
     /**
      * Sets a string containing the name of the schema format used to define the message payload. If omitted,
-     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">Schema object</a>.
-     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">supported schema formats table</a>
+     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">
+     *     Schema object</a>.
+     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">
+     *     supported schema formats table</a>
      * for more information. Custom values are allowed but their implementation is OPTIONAL. A custom value MUST NOT refer
-     * to one of the schema formats listed in the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
+     * to one of the schema formats listed in the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
      *
      * @param schemaFormat schemaFormat property
-     * */
+     */
     void setSchemaFormat(String schemaFormat);
 
     /**
      * Sets a string containing the name of the schema format used to define the message payload. If omitted,
-     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">Schema object</a>.
-     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">supported schema formats table</a>
+     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">
+     *     Schema object</a>.
+     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">
+     *     supported schema formats table</a>
      * for more information. Custom values are allowed but their implementation is OPTIONAL. A custom value MUST NOT refer
-     * to one of the schema formats listed in the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
+     * to one of the schema formats listed in the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
      *
      * @param schemaFormat schemaFormat property
      * @return message instance with the schemaFormat property set
-     * */
+     */
     default Message schemaFormat(String schemaFormat) {
         setSchemaFormat(schemaFormat);
         return this;
@@ -139,7 +148,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#defaultContentTypeString">defaultContentType</a> field.
      *
      * @return contentType property
-     * */
+     */
     String getContentType();
 
     /**
@@ -148,7 +157,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#defaultContentTypeString">defaultContentType</a> field.
      *
      * @param contentType contentType property
-     * */
+     */
     void setContentType(String contentType);
 
     /**
@@ -158,7 +167,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param contentType contentType property
      * @return Message instance with the contentType property set
-     * */
+     */
     default Message contentType(String contentType) {
         setContentType(contentType);
         return this;
@@ -168,14 +177,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns a machine-friendly name for the message.
      *
      * @return name property
-     * */
+     */
     String getName();
 
     /**
      * Sets a machine-friendly name for the message.
      *
      * @param name name property
-     * */
+     */
     void setName(String name);
 
     /**
@@ -183,7 +192,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param name name property
      * @return Message instance with the name property set
-     * */
+     */
     default Message name(String name) {
         setName(name);
         return this;
@@ -193,14 +202,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns a human-friendly title for the message.
      *
      * @return title property
-     * */
+     */
     String getTitle();
 
     /**
      * Sets a human-friendly title for the message.
      *
      * @param title title property
-     * */
+     */
     void setTitle(String title);
 
     /**
@@ -208,7 +217,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param title title property
      * @return Message instance with the title property set
-     * */
+     */
     default Message title(String title) {
         setTitle(title);
         return this;
@@ -218,14 +227,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns a short summary of what the message is about.
      *
      * @return summary property
-     * */
+     */
     String getSummary();
 
     /**
      * Sets a short summary of what the message is about.
      *
      * @param summary summary property
-     * */
+     */
     void setSummary(String summary);
 
     /**
@@ -233,7 +242,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param summary summary property
      * @return Message instance with the summary property set
-     * */
+     */
     default Message summary(String summary) {
         setSummary(summary);
         return this;
@@ -244,7 +253,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * rich text representation.
      *
      * @return description property
-     * */
+     */
     String getDescription();
 
     /**
@@ -252,7 +261,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * rich text representation.
      *
      * @param description description property
-     * */
+     */
     void setDescription(String description);
 
     /**
@@ -261,7 +270,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param description description property
      * @return Message instance with the description property set
-     * */
+     */
     default Message description(String description) {
         setDescription(description);
         return this;
@@ -271,14 +280,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns a list of tags for API documentation control. Tags can be used for logical grouping of messages.
      *
      * @return tags property
-     * */
+     */
     Tag getTags();
 
     /**
      * Sets a list of tags for API documentation control. Tags can be used for logical grouping of messages.
      *
      * @param tags tags property
-     * */
+     */
     void setTags(Tag tags);
 
     /**
@@ -286,7 +295,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param tags tags property
      * @return Message instance with the tags property set
-     * */
+     */
     default Message tags(Tag tags) {
         setTags(tags);
         return this;
@@ -296,14 +305,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns additional external documentation for this message.
      *
      * @return externalDocs property
-     * */
+     */
     ExternalDocumentation getExternalDocs();
 
     /**
      * Sets additional external documentation for this message.
      *
      * @param externalDocs externalDocs property
-     * */
+     */
     void setExternalDocs(ExternalDocumentation externalDocs);
 
     /**
@@ -311,7 +320,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param externalDocs externalDocs property
      * @return Message instance with the externalDocs property set
-     * */
+     */
     default Message externalDocs(ExternalDocumentation externalDocs) {
         setExternalDocs(externalDocs);
         return this;
@@ -321,14 +330,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * Returns a map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the message.
      *
      * @return Bindings property
-     * */
+     */
     MessageBindings getBindings();
 
     /**
      * Sets a map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the message.
      *
      * @param bindings Bindings property
-     * */
+     */
     void setBindings(MessageBindings bindings);
 
     /**
@@ -336,7 +345,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param bindings Bindings property
      * @return Message instance with the bindings property set
-     * */
+     */
     default Message bindings(MessageBindings bindings) {
         setBindings(bindings);
         return this;
@@ -348,7 +357,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * or <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectPayload">payload</a> fields, respectively.
      *
      * @return examples property
-     * */
+     */
     Map<String, Object> getExamples();
 
     /**
@@ -357,7 +366,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * or <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectPayload">payload</a> fields, respectively.
      *
      * @param examples examples property
-     * */
+     */
     void setExamples(Map<String, Object> examples);
 
     /**
@@ -367,7 +376,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @param examples examples property
      * @return Message instance with the examples property set
-     * */
+     */
     default Message examples(Map<String, Object> examples) {
         setExamples(examples);
         return this;
@@ -376,29 +385,32 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
     /**
      * Returns a list of traits to apply to the message object. Traits MUST be merged into the message object using the
      * <a href="https://tools.ietf.org/html/rfc7386">JSON Merge Patch</a> algorithm in the same order they are defined
-     * here. The resulting object MUST be a valid <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
+     * here. The resulting object MUST be a valid
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
      *
      * @return traits property
-     * */
+     */
     MessageTrait[] getTraits();
 
     /**
      * Sets a list of traits to apply to the message object. Traits MUST be merged into the message object using the
      * <a href="https://tools.ietf.org/html/rfc7386">JSON Merge Patch</a> algorithm in the same order they are defined
-     * here. The resulting object MUST be a valid <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
+     * here. The resulting object MUST be a valid
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
      *
      * @param traits traits property
-     * */
+     */
     void setTraits(MessageTrait[] traits);
 
     /**
      * Sets a list of traits to apply to the message object. Traits MUST be merged into the message object using the
      * <a href="https://tools.ietf.org/html/rfc7386">JSON Merge Patch</a> algorithm in the same order they are defined
-     * here. The resulting object MUST be a valid <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
+     * here. The resulting object MUST be a valid
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
      *
      * @param traits traits property
      * @return Message instance with the traits property set
-     * */
+     */
     default Message traits(MessageTrait[] traits) {
         setTraits(traits);
         return this;
