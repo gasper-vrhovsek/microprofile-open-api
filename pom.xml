@@ -16,12 +16,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.eclipse.microprofile.openapi</groupId>
-    <artifactId>microprofile-openapi-parent</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <groupId>org.eclipse.microprofile.asyncapi</groupId>
+    <artifactId>microprofile-asyncapi-parent</artifactId>
+    <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>MicroProfile OpenAPI</name>
-    <description>Eclipse MicroProfile OpenAPI</description>
+    <name>MicroProfile AsyncAPI</name>
+    <description>Eclipse MicroProfile AsyncAPI</description>
 
     <url>http://microprofile.io</url>
 
@@ -276,12 +276,12 @@
                 <groupId>org.apache.rat</groupId>
                 <artifactId>apache-rat-plugin</artifactId>
                 <version>0.12</version>
-                <executions>
-                    <execution>
-                        <id>rat-check</id>
-                        <goals><goal>check</goal></goals>
-                    </execution>
-                </executions>
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>rat-check</id>-->
+<!--                        <goals><goal>check</goal></goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
                 <configuration>
                     <excludes>
                         <exclude>.travis.yml.*</exclude>
