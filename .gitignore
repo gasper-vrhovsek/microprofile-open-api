@@ -13,3 +13,5 @@ target/
 *.ipr
 *.iws
 /**/nbactions.xml
+
+checkstyle-rules.xml
