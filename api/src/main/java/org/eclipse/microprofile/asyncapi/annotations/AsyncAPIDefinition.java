@@ -60,9 +60,10 @@ public @interface AsyncAPIDefinition {
     Server[] servers() default {};
 
     /**
+     * The available channels and messages for the API. This field is required
      *
+     * @return the available channels
      */
-    // TODO channels need a "key" same as servers
     ChannelItem[] channels() default {};
 
     /**
@@ -71,11 +72,12 @@ public @interface AsyncAPIDefinition {
      *
      * @return the tags used by the specification with any additional metadata
      */
-    // TODO check if tags from openapi are ok
     Tag[] tags() default {};
 
     /**
-     * TODO
+     * An element to hold various schemas for the specification.
+     *
+     * @return available components
      */
     Components components() default @Components;
 }

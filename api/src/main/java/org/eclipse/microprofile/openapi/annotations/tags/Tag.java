@@ -76,6 +76,7 @@ import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
 @Repeatable(Tags.class)
 @Inherited
 public @interface Tag {
+    // TODO migrate to asyncapi
 
     /**
      * The name of this tag. The name must be unique and is case sensitive. 

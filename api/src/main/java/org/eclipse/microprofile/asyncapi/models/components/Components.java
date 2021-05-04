@@ -232,7 +232,7 @@ public interface Components extends Constructible, Extensible<Components> {
      *
      * @param operationTraits a copy Map (potentially immutable) containing the keys and the reusable operationTraits of API
      *                        operations for this AsyncAPI document
-     * @return the current Components object with the correlationIds property set
+     * @return the current Components object with the operationTraits property set
      **/
     default Components operationTraits(Map<String, OperationTrait> operationTraits) {
         setOperationTraits(operationTraits);

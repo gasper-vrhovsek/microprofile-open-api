@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * A representation of a channel. Describes the operation ovailable on a singe channel.
+ * A representation of a channel. Describes the operation available on a single channel.
  *
  * @see org.eclipse.microprofile.asyncapi.models.channels.ChannelItem
  */
