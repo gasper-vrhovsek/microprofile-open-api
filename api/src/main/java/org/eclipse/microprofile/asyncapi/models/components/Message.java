@@ -281,14 +281,14 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      *
      * @return tags property
      */
-    Tag getTags();
+    Tag[] getTags();
 
     /**
      * Sets a list of tags for API documentation control. Tags can be used for logical grouping of messages.
      *
      * @param tags tags property
      */
-    void setTags(Tag tags);
+    void setTags(Tag[] tags);
 
     /**
      * Sets a list of tags for API documentation control. Tags can be used for logical grouping of messages.
@@ -296,7 +296,7 @@ public interface Message extends Constructible, Extensible<Message>, Reference<M
      * @param tags tags property
      * @return Message instance with the tags property set
      */
-    default Message tags(Tag tags) {
+    default Message tags(Tag[] tags) {
         setTags(tags);
         return this;
     }
