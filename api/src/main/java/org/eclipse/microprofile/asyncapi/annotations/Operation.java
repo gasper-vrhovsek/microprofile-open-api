@@ -55,5 +55,5 @@ public @interface Operation {
      *
      * @return
      */
-    Message message();
+    Message message() default @Message();
 }
