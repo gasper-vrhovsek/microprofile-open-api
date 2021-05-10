@@ -53,6 +53,10 @@ public interface AmqpBindings extends Constructible {
         return this;
     }
 
+    /**
+     * TODO docs
+     * @return
+     */
     String getBindingVersion();
 
     void setBindingVersion(String bindingVersion);
