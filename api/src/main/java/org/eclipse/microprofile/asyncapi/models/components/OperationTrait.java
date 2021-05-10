@@ -1,11 +1,11 @@
 package org.eclipse.microprofile.asyncapi.models.components;
 
 import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.Reference;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 /**
  * Describes a trait that MAY be applied to an

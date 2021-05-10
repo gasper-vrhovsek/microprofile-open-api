@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.tags;
+package org.eclipse.microprofile.asyncapi.annotations.tags;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -27,8 +27,8 @@ import java.lang.annotation.Target;
  * The Tags annotation is a container for @Tag annotations. When used on a method or a type
  * it is treated as if each tag annotation were applied individually.
  * <p>
- * <b>Note:</b> If both {@link org.eclipse.microprofile.openapi.annotations.tags.Tag Tag} and 
- * {@link org.eclipse.microprofile.openapi.annotations.tags.Tags Tags} annotations are specified on the same method/class,
+ * <b>Note:</b> If both {@link Tag Tag} and
+ * {@link Tags Tags} annotations are specified on the same method/class,
  * then both tag definitions should be applied to method/class.
  * @see <a href= "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#tagObject">OpenAPI Specification Tag Object</a>
  *

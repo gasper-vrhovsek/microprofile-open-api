@@ -1,6 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.server.mqtt;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * Last Will and Testament configuration.

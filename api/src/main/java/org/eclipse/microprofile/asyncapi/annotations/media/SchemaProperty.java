@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.media;
+package org.eclipse.microprofile.asyncapi.annotations.media;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
 
 /**
  * The SchemaProperty Object allows the definition of input and output data types nested

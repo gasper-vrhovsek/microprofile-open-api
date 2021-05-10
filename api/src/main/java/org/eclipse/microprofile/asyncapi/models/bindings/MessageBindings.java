@@ -4,9 +4,9 @@ import org.eclipse.microprofile.asyncapi.models.bindings.message.AmqpBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.message.HttpBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.message.KafkaBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.message.MqttBindings;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 /**
  * Map describing protocol-specific definitions for a server.

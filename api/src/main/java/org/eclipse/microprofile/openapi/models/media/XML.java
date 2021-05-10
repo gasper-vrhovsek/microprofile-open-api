@@ -17,8 +17,8 @@
 
 package org.eclipse.microprofile.openapi.models.media;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 /**
  * A metadata object that allows for more fine-tuned XML model definitions. When using arrays, XML element names are not inferred (for singular/plural

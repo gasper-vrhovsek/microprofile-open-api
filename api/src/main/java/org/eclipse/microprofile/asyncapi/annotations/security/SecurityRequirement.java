@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.security;
+package org.eclipse.microprofile.asyncapi.annotations.security;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

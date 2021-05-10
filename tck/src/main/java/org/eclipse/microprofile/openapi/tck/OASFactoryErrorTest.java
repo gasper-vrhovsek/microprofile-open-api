@@ -19,8 +19,8 @@ package org.eclipse.microprofile.openapi.tck;
 import java.util.Map;
 
 import org.eclipse.microprofile.openapi.OASFactory;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.info.License;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.info.License;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.testng.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

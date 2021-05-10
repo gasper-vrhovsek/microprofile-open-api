@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models.servers;
+package org.eclipse.microprofile.asyncapi.models.servers;
 
 import java.util.List;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 /**
  * An object representing a Server Variable for server URL template substitution.

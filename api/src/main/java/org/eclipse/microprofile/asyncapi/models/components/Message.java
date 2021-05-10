@@ -2,11 +2,11 @@ package org.eclipse.microprofile.asyncapi.models.components;
 
 import org.eclipse.microprofile.asyncapi.models.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.Reference;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 import java.util.Map;
 

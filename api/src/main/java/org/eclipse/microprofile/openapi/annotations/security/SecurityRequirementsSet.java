@@ -16,6 +16,8 @@
 
 package org.eclipse.microprofile.openapi.annotations.security;
 
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;

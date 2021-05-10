@@ -17,8 +17,8 @@
 
 package org.eclipse.microprofile.openapi.models.security;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 /**
  * Configuration of the supported OAuthFlows

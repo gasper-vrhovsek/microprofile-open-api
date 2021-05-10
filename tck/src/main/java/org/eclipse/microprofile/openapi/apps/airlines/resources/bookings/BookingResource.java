@@ -26,12 +26,12 @@ import org.eclipse.microprofile.openapi.annotations.media.ExampleObject;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.eclipse.microprofile.openapi.annotations.tags.Tags;
-import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tags;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeType;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.annotations.servers.Server;
 
 import java.util.Map;

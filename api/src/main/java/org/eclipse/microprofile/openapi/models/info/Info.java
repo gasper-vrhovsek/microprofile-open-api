@@ -17,8 +17,10 @@
 
 package org.eclipse.microprofile.openapi.models.info;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.info.Contact;
+import org.eclipse.microprofile.asyncapi.models.info.License;
 
 /**
  * This interface represents all the metadata about the API. The metadata may be used by clients if needed, and may be presented in editing or

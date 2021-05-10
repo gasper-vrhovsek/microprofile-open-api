@@ -5,10 +5,10 @@ import org.eclipse.microprofile.asyncapi.models.bindings.ChannelBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.models.bindings.ServerBindings;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.media.Schema;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityScheme;
 
 import java.util.Map;
 

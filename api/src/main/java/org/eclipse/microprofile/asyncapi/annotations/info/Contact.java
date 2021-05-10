@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.media;
+package org.eclipse.microprofile.asyncapi.annotations.info;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -23,28 +23,33 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * This object maps payload values to a particular Schema.
+ * Contact information for the exposed API.
  * 
- * @see <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#discriminator-object">OpenAPI Specification Discriminator
- *      Object</a>
+ * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.md#contactObject"
  **/
-@Target({})
+@Target({ })
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-public @interface DiscriminatorMapping {
+public @interface Contact {
+    /**
+     * The identifying name of the contact person/organization.
+     * 
+     * @return the name of the contact
+     **/
+    String name() default "";
 
     /**
-     * The property value that will be mapped to a Schema
+     * The URL pointing to the contact information. Must be in the format of a URL.
      * 
-     * @return the property value
+     * @return the URL of the contact
      **/
-    String value() default "";
+    String url() default "";
 
     /**
-     * The schema that is being mapped to a property value
+     * The email address of the contact person/organization. Must be in the format of an email address.
      * 
-     * @return the Schema reference
+     * @return the email address of the contact
      **/
-    Class<?> schema() default Void.class;
+    String email() default "";
 
 }

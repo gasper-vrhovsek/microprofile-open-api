@@ -17,6 +17,9 @@
 
 package org.eclipse.microprofile.openapi.annotations.info;
 
+import org.eclipse.microprofile.asyncapi.annotations.info.Contact;
+import org.eclipse.microprofile.asyncapi.annotations.info.License;
+
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

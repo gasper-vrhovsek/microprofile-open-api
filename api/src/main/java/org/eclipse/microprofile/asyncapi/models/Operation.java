@@ -3,10 +3,7 @@ package org.eclipse.microprofile.asyncapi.models;
 import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.models.components.Message;
 import org.eclipse.microprofile.asyncapi.models.components.OperationTrait;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 import java.util.List;
 

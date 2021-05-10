@@ -5,7 +5,7 @@ import org.eclipse.microprofile.asyncapi.annotations.bindings.ChannelBindings;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.ServerBindings;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

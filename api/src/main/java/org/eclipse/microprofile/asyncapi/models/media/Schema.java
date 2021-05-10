@@ -17,10 +17,10 @@
 
 package org.eclipse.microprofile.asyncapi.models.media;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 import java.math.BigDecimal;
 import java.util.List;

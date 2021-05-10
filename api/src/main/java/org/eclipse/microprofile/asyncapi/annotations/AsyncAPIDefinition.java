@@ -5,8 +5,7 @@ import org.eclipse.microprofile.asyncapi.annotations.components.Components;
 import org.eclipse.microprofile.asyncapi.annotations.identifier.Identifier;
 import org.eclipse.microprofile.asyncapi.annotations.info.Info;
 import org.eclipse.microprofile.asyncapi.annotations.servers.Server;
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

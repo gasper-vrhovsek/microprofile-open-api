@@ -1,10 +1,9 @@
 package org.eclipse.microprofile.asyncapi.models.servers;
 
 import org.eclipse.microprofile.asyncapi.models.bindings.ServerBindings;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.models.servers.ServerVariable;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityRequirement;
 
 import java.util.List;
 import java.util.Map;

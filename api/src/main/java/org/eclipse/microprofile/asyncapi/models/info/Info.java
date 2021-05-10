@@ -1,9 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.info;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.info.Contact;
-import org.eclipse.microprofile.openapi.models.info.License;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 public interface Info extends Constructible, Extensible<Info> {
 

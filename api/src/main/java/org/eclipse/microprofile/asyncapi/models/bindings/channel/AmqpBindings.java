@@ -2,7 +2,7 @@ package org.eclipse.microprofile.asyncapi.models.bindings.channel;
 
 import org.eclipse.microprofile.asyncapi.models.bindings.channel.amqp.AmqpExchange;
 import org.eclipse.microprofile.asyncapi.models.bindings.channel.amqp.AmqpQueue;
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * This object contains information about the channel representation in AMQP

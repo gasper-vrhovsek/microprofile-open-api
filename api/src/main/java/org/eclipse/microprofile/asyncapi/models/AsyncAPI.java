@@ -4,11 +4,8 @@ import org.eclipse.microprofile.asyncapi.models.channels.ChannelItem;
 import org.eclipse.microprofile.asyncapi.models.components.Components;
 import org.eclipse.microprofile.asyncapi.models.identifier.Identifier;
 import org.eclipse.microprofile.asyncapi.models.servers.Server;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.info.Info;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.info.Info;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 import java.util.List;
 import java.util.Map;

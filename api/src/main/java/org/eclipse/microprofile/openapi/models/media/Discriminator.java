@@ -19,7 +19,7 @@ package org.eclipse.microprofile.openapi.models.media;
 
 import java.util.Map;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * Discriminator

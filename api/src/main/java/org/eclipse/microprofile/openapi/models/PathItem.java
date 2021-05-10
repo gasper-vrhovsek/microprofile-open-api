@@ -20,6 +20,9 @@ package org.eclipse.microprofile.openapi.models;
 import java.util.List;
 import java.util.Map;
 
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 import org.eclipse.microprofile.openapi.models.parameters.Parameter;
 import org.eclipse.microprofile.openapi.models.servers.Server;
 

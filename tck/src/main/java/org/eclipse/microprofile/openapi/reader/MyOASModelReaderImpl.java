@@ -23,16 +23,16 @@ import java.util.HashMap;
 import org.eclipse.microprofile.openapi.OASFactory;
 import org.eclipse.microprofile.openapi.OASModelReader;
 import org.eclipse.microprofile.openapi.models.Components;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
 import org.eclipse.microprofile.openapi.models.OpenAPI;
 import org.eclipse.microprofile.openapi.models.Operation;
 import org.eclipse.microprofile.openapi.models.PathItem;
 import org.eclipse.microprofile.openapi.models.Paths;
 import org.eclipse.microprofile.openapi.models.examples.Example;
 import org.eclipse.microprofile.openapi.models.headers.Header;
-import org.eclipse.microprofile.openapi.models.info.Contact;
+import org.eclipse.microprofile.asyncapi.models.info.Contact;
 import org.eclipse.microprofile.openapi.models.info.Info;
-import org.eclipse.microprofile.openapi.models.info.License;
+import org.eclipse.microprofile.asyncapi.models.info.License;
 import org.eclipse.microprofile.openapi.models.links.Link;
 import org.eclipse.microprofile.openapi.models.media.Content;
 import org.eclipse.microprofile.openapi.models.media.MediaType;
@@ -41,11 +41,11 @@ import org.eclipse.microprofile.openapi.models.parameters.Parameter;
 import org.eclipse.microprofile.openapi.models.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.models.responses.APIResponse;
 import org.eclipse.microprofile.openapi.models.responses.APIResponses;
-import org.eclipse.microprofile.openapi.models.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.models.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.models.servers.Server;
-import org.eclipse.microprofile.openapi.models.servers.ServerVariable;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.servers.ServerVariable;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 
 public class MyOASModelReaderImpl implements OASModelReader {

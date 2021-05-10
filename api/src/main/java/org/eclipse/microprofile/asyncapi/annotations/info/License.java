@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.info;
+package org.eclipse.microprofile.asyncapi.annotations.info;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -23,33 +23,26 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Contact information for the exposed API.
+ * License information for the exposed API.
  * 
- * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.md#contactObject"
+ * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.md#licenseObject"
  **/
-@Target({ })
+@Target({})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-public @interface Contact {
+public @interface License {
     /**
-     * The identifying name of the contact person/organization.
+     * The license name used for the API.
      * 
-     * @return the name of the contact
+     * @return the name of the license
      **/
-    String name() default "";
+    String name();
 
     /**
-     * The URL pointing to the contact information. Must be in the format of a URL.
+     * A URL to the license used for the API. MUST be in the format of a URL.
      * 
-     * @return the URL of the contact
+     * @return the URL of the license
      **/
     String url() default "";
-
-    /**
-     * The email address of the contact person/organization. Must be in the format of an email address.
-     * 
-     * @return the email address of the contact
-     **/
-    String email() default "";
 
 }

@@ -19,8 +19,9 @@ package org.eclipse.microprofile.openapi.models.servers;
 
 import java.util.Map;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.servers.ServerVariable;
 
 /**
  * An object representing a server.

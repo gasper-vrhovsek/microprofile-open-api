@@ -1,9 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models;
 
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
 
 /**
  * Describes operations available on a single channel

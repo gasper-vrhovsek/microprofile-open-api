@@ -17,10 +17,8 @@
 
 package org.eclipse.microprofile.asyncapi.annotations.media;
 
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.openapi.annotations.media.DiscriminatorMapping;
-import org.eclipse.microprofile.openapi.annotations.media.SchemaProperty;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -89,7 +87,7 @@ public @interface Schema {
     /**
      * The name of the schema or property.
      * <p>
-     * The name is REQUIRED when the schema is defined within {@link org.eclipse.microprofile.openapi.annotations.Components}. The 
+     * The name is REQUIRED when the schema is defined within {@link org.eclipse.microprofile.asyncapi.annotations.components.Components}. The
      * name will be used as the key to add this schema to the 'schemas' map for reuse.
      * </p>
      * 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models;
+package org.eclipse.microprofile.asyncapi.models;
 
 import java.util.Map;
 

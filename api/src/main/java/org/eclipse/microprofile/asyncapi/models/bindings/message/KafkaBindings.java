@@ -1,7 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.message;
 
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * This object contains information about the message representation in Kafka.

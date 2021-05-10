@@ -14,14 +14,14 @@
 package org.eclipse.microprofile.openapi.apps.petstore.resource;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
-import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeIn;
-import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
-import org.eclipse.microprofile.openapi.annotations.security.SecuritySchemes;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeIn;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeType;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecuritySchemes;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
 import org.eclipse.microprofile.openapi.annotations.security.OAuthFlow;
 import org.eclipse.microprofile.openapi.annotations.security.OAuthFlows;
 import org.eclipse.microprofile.openapi.annotations.callbacks.Callback;

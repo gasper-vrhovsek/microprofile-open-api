@@ -36,4 +36,4 @@
  */
 
 @org.osgi.annotation.versioning.Version("1.0")
-package org.eclipse.microprofile.openapi.annotations.tags;
+package org.eclipse.microprofile.asyncapi.annotations.tags;

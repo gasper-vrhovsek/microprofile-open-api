@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.enums;
+package org.eclipse.microprofile.asyncapi.annotations.enums;
 
 public enum SecuritySchemeType {
     DEFAULT(""), APIKEY("apiKey"), HTTP("http"), OPENIDCONNECT("openIdConnect"), OAUTH2("oauth2");

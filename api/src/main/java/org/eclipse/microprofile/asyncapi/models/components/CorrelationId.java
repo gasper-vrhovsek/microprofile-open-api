@@ -1,8 +1,8 @@
 package org.eclipse.microprofile.asyncapi.models.components;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 /**
  * An object that specifies an identifier at design time that can used for message tracing and correlation.

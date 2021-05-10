@@ -3,9 +3,9 @@ package org.eclipse.microprofile.asyncapi.models.channels;
 import org.eclipse.microprofile.asyncapi.models.Operation;
 import org.eclipse.microprofile.asyncapi.models.Parameter;
 import org.eclipse.microprofile.asyncapi.models.bindings.ChannelBindings;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 import java.util.Map;
 

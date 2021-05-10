@@ -17,6 +17,8 @@
 
 package org.eclipse.microprofile.openapi.annotations.servers;
 
+import org.eclipse.microprofile.asyncapi.annotations.servers.ServerVariable;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Repeatable;

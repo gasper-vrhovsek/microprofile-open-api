@@ -1,7 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.channel;
 
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * When using WebSockets, the channel represents the connection. Unlike other protocols that support multiple virtual

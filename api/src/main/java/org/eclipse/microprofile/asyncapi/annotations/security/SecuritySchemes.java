@@ -1,5 +1,4 @@
 /**
- * Copyright (c) 2017 Contributors to the Eclipse Foundation
  * Copyright 2017 SmartBear Software
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,34 +14,30 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.info;
+package org.eclipse.microprofile.asyncapi.annotations.security;
 
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
+
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * License information for the exposed API.
+ * This object represents an array of SecurityScheme annotations that can be specified at the definition level.
  * 
- * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.md#licenseObject"
+ * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#security-scheme-object"
  **/
-@Target({})
+@Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-public @interface License {
+public @interface SecuritySchemes {
     /**
-     * The license name used for the API.
-     * 
-     * @return the name of the license
+     * An array of SecurityScheme annotations that can be specified at definition level.
+     *
+     * @return the array of the SecurityScheme annotations
      **/
-    String name();
-
-    /**
-     * A URL to the license used for the API. MUST be in the format of a URL.
-     * 
-     * @return the URL of the license
-     **/
-    String url() default "";
+    SecurityScheme[] value() default {};
 
 }

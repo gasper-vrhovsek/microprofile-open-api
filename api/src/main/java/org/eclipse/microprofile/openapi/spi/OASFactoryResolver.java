@@ -16,7 +16,7 @@
 
 package org.eclipse.microprofile.openapi.spi;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 import java.security.AccessController;
 import java.security.PrivilegedAction;
@@ -39,7 +39,7 @@ public abstract class OASFactoryResolver {
      * Create a new instance of a constructible element from the OpenAPI model tree.
      * 
      * @param <T> describes the type parameter
-     * @param clazz represents a model which extends the org.eclipse.microprofile.openapi.models.Constructible interface
+     * @param clazz represents a model which extends the org.eclipse.microprofile.asyncapi.models.Constructible interface
 
      * @return a new instance of the requested model class
      * 

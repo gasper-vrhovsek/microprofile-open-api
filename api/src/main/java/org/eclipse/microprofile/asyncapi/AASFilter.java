@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.eclipse.microprofile.openapi;
+package org.eclipse.microprofile.asyncapi;
 
+import org.eclipse.microprofile.asyncapi.models.servers.Server;
 import org.eclipse.microprofile.openapi.models.OpenAPI;
 import org.eclipse.microprofile.openapi.models.Operation;
 import org.eclipse.microprofile.openapi.models.PathItem;
@@ -26,21 +27,21 @@ import org.eclipse.microprofile.openapi.models.parameters.Parameter;
 import org.eclipse.microprofile.openapi.models.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.models.responses.APIResponse;
 import org.eclipse.microprofile.asyncapi.models.security.SecurityScheme;
-import org.eclipse.microprofile.openapi.models.servers.Server;
 import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 
 /**
- * This interface allows application developers to filter different parts of the OpenAPI model tree.
+ * This interface allows application developers to filter different parts of the AsyncAPI model tree.
  * 
- * A common scenario is to dynamically augment (update or remove) OpenAPI elements based on the environment
+ * A common scenario is to dynamically augment (update or remove) AsyncAPI elements based on the environment
  * that the application is currently in.  
  * 
- * The registration of this filter is controlled by setting the key <b>mp.openapi.filter</b> using
+ * The registration of this filter is controlled by setting the key <b>mp.asyncapi.filter</b> using
  * one of the configuration sources specified in <a href="https://github.com/eclipse/microprofile-config">MicroProfile Config</a>.
  * The value is the fully qualified name of the filter implementation, which needs to be visible to the application's classloader.
  *
  */
-public interface OASFilter {    
+// TODO asyncapi
+public interface AASFilter {
 
     /** 
      * Allows filtering of a particular PathItem.  Implementers of this method can choose to update the given PathItem,

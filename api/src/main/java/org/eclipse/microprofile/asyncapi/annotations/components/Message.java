@@ -2,8 +2,8 @@ package org.eclipse.microprofile.asyncapi.annotations.components;
 
 import org.eclipse.microprofile.asyncapi.annotations.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

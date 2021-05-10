@@ -17,13 +17,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.microprofile.openapi.annotations.Components;
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;
-import org.eclipse.microprofile.openapi.annotations.info.Contact;
+import org.eclipse.microprofile.asyncapi.annotations.info.Contact;
 import org.eclipse.microprofile.openapi.annotations.info.Info;
-import org.eclipse.microprofile.openapi.annotations.info.License;
+import org.eclipse.microprofile.asyncapi.annotations.info.License;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
 import org.eclipse.microprofile.openapi.apps.petstore.model.Lizard;
 import org.eclipse.microprofile.openapi.apps.petstore.resource.PetResource;
 import org.eclipse.microprofile.openapi.apps.petstore.resource.PetStoreResource;

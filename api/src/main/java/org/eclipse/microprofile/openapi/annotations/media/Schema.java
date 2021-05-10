@@ -23,8 +23,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.media.DiscriminatorMapping;
+import org.eclipse.microprofile.asyncapi.annotations.media.SchemaProperty;
 
 /**
  * The Schema Object allows the definition of input and output data types. 

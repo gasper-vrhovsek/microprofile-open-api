@@ -21,10 +21,10 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 /**
  * The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is

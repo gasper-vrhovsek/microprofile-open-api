@@ -49,7 +49,7 @@ public class AirlinesAppTest extends AppTestBase {
     @Deployment(name = "airlines")
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class, "airlines.war")
-                .addPackages(true, "org.eclipse.microprofile.openapi.apps.airlines")
+                .addPackages(true, "org.eclipse.microprofile.asyncapi.apps.airlines")
                 .addAsManifestResource("openapi.yaml", "openapi.yaml");
     }
 

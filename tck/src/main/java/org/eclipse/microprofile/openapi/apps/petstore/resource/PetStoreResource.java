@@ -15,17 +15,17 @@ package org.eclipse.microprofile.openapi.apps.petstore.resource;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
-import org.eclipse.microprofile.openapi.annotations.media.DiscriminatorMapping;
+import org.eclipse.microprofile.asyncapi.annotations.media.DiscriminatorMapping;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.parameters.Parameter;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
-import org.eclipse.microprofile.openapi.annotations.enums.SecuritySchemeType;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeType;
 import org.eclipse.microprofile.openapi.annotations.extensions.Extension;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityScheme;
-import org.eclipse.microprofile.openapi.annotations.security.SecuritySchemes;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirements;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecuritySchemes;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirements;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
 
 import org.eclipse.microprofile.openapi.apps.petstore.data.StoreData;
 import org.eclipse.microprofile.openapi.apps.petstore.model.BadOrder;

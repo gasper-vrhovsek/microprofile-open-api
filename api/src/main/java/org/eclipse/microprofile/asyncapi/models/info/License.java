@@ -15,10 +15,10 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models.info;
+package org.eclipse.microprofile.asyncapi.models.info;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 /**
  * This interface represents the License information for the exposed API.

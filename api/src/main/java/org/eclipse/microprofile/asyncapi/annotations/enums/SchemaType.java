@@ -1,5 +1,6 @@
 /**
  * Copyright (c) 2017 Contributors to the Eclipse Foundation
+ * Copyright 2017 SmartBear Software
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +15,21 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models;
+package org.eclipse.microprofile.asyncapi.annotations.enums;
 
-/**
- * Marker interface for OpenAPI model objects that can be constructed by the OASFactory.
- * 
- * @see org.eclipse.microprofile.openapi.OASFactory
- */
-public interface Constructible {
+public enum SchemaType {
+    INTEGER("integer"), NUMBER("number"), BOOLEAN("boolean"), 
+    STRING("string"), OBJECT("object"), ARRAY("array"), DEFAULT("");
 
+
+    private String value;
+
+    SchemaType(String value) {
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 }

@@ -15,11 +15,13 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models.security;
+package org.eclipse.microprofile.asyncapi.models.security;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
+// TODO oauthFlows i think are not in asynapi
+import org.eclipse.microprofile.openapi.models.security.OAuthFlows;
 
 /**
  * SecurityScheme

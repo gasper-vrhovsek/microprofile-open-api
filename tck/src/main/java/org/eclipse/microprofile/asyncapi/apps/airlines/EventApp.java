@@ -13,12 +13,12 @@ import org.eclipse.microprofile.asyncapi.annotations.servers.Server;
 import org.eclipse.microprofile.asyncapi.apps.airlines.consumer.PlaneCheckOutConsumer;
 import org.eclipse.microprofile.asyncapi.apps.airlines.event.Plane;
 import org.eclipse.microprofile.asyncapi.apps.airlines.producer.PlaneCheckInProducer;
-import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.openapi.annotations.info.Contact;
-import org.eclipse.microprofile.openapi.annotations.info.License;
-import org.eclipse.microprofile.openapi.annotations.media.SchemaProperty;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
+import org.eclipse.microprofile.asyncapi.annotations.info.Contact;
+import org.eclipse.microprofile.asyncapi.annotations.info.License;
+import org.eclipse.microprofile.asyncapi.annotations.media.SchemaProperty;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,9 +1,9 @@
 package org.eclipse.microprofile.asyncapi.models.components;
 
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.Reference;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Reference;
 
 /**
  * Describes a trait that MAY be applied to a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">

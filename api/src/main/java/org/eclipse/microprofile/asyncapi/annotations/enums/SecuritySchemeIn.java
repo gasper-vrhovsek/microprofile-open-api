@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.enums;
+package org.eclipse.microprofile.asyncapi.annotations.enums;
 
 public enum SecuritySchemeIn {
     DEFAULT(""), HEADER("header"), QUERY("query"), COOKIE("cookie");

@@ -17,6 +17,9 @@
 
 package org.eclipse.microprofile.openapi.models;
 
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+
 import java.util.Map;
 
 /**

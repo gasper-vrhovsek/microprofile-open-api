@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations;
+package org.eclipse.microprofile.asyncapi.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

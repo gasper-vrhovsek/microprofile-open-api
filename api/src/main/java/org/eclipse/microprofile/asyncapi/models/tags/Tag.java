@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models.tags;
+package org.eclipse.microprofile.asyncapi.models.tags;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
 
 /**
  * Tag

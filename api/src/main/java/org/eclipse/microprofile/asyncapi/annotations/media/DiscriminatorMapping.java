@@ -1,4 +1,5 @@
 /**
+ * Copyright (c) 2017 Contributors to the Eclipse Foundation
  * Copyright 2017 SmartBear Software
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,28 +15,36 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.security;
+package org.eclipse.microprofile.asyncapi.annotations.media;
 
-import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * This object represents an array of SecurityScheme annotations that can be specified at the definition level.
+ * This object maps payload values to a particular Schema.
  * 
- * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#security-scheme-object"
+ * @see <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#discriminator-object">OpenAPI Specification Discriminator
+ *      Object</a>
  **/
-@Target({ ElementType.TYPE })
+@Target({})
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
-public @interface SecuritySchemes {
+public @interface DiscriminatorMapping {
+
     /**
-     * An array of SecurityScheme annotations that can be specified at definition level.
-     *
-     * @return the array of the SecurityScheme annotations
+     * The property value that will be mapped to a Schema
+     * 
+     * @return the property value
      **/
-    SecurityScheme[] value() default {};
+    String value() default "";
+
+    /**
+     * The schema that is being mapped to a property value
+     * 
+     * @return the Schema reference
+     **/
+    Class<?> schema() default Void.class;
 
 }

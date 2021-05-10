@@ -1,7 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 public interface KafkaBindings extends Constructible {
 

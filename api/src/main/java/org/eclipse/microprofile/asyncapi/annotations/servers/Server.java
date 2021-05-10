@@ -18,8 +18,7 @@
 package org.eclipse.microprofile.asyncapi.annotations.servers;
 
 import org.eclipse.microprofile.asyncapi.annotations.bindings.ServerBindings;
-import org.eclipse.microprofile.openapi.annotations.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.annotations.servers.ServerVariable;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

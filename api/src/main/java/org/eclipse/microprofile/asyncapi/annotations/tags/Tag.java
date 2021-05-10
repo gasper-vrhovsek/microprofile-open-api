@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.tags;
+package org.eclipse.microprofile.asyncapi.annotations.tags;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -24,7 +24,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 
 /**
  * This object represents a tag. A tag is meta-information you can use to help
@@ -48,8 +48,8 @@ import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
  * If more than one tag is defined with the same name then only one tag with that name will appear 
  * in the OpenAPI document and the results are implementation dependent. 
  * <p>
- * <b>Note:</b> If both {@link org.eclipse.microprofile.openapi.annotations.tags.Tag Tag} and 
- * {@link org.eclipse.microprofile.openapi.annotations.tags.Tags Tags} annotations are specified on the same method or class,
+ * <b>Note:</b> If both {@link Tag Tag} and
+ * {@link Tags Tags} annotations are specified on the same method or class,
  * then both tag definitions should be applied.
  * <pre>
  * &#64;Tag(name = "luggage", description = "Operations related to luggage handling.")

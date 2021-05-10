@@ -1,7 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.server;
 
 import org.eclipse.microprofile.asyncapi.models.bindings.server.mqtt.LastWill;
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * This object contains information about the server representation in MQTT.

@@ -1,6 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 public interface HttpBindings extends Constructible {
 

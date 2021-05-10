@@ -17,8 +17,8 @@
 package org.eclipse.microprofile.openapi;
 
 import org.eclipse.microprofile.openapi.models.Components;
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.ExternalDocumentation;
 import org.eclipse.microprofile.openapi.models.OpenAPI;
 import org.eclipse.microprofile.openapi.models.Operation;
 import org.eclipse.microprofile.openapi.models.PathItem;
@@ -26,9 +26,9 @@ import org.eclipse.microprofile.openapi.models.Paths;
 import org.eclipse.microprofile.openapi.models.callbacks.Callback;
 import org.eclipse.microprofile.openapi.models.examples.Example;
 import org.eclipse.microprofile.openapi.models.headers.Header;
-import org.eclipse.microprofile.openapi.models.info.Contact;
+import org.eclipse.microprofile.asyncapi.models.info.Contact;
 import org.eclipse.microprofile.openapi.models.info.Info;
-import org.eclipse.microprofile.openapi.models.info.License;
+import org.eclipse.microprofile.asyncapi.models.info.License;
 import org.eclipse.microprofile.openapi.models.links.Link;
 import org.eclipse.microprofile.openapi.models.media.Content;
 import org.eclipse.microprofile.openapi.models.media.Discriminator;
@@ -42,11 +42,11 @@ import org.eclipse.microprofile.openapi.models.responses.APIResponse;
 import org.eclipse.microprofile.openapi.models.responses.APIResponses;
 import org.eclipse.microprofile.openapi.models.security.OAuthFlow;
 import org.eclipse.microprofile.openapi.models.security.OAuthFlows;
-import org.eclipse.microprofile.openapi.models.security.SecurityRequirement;
-import org.eclipse.microprofile.openapi.models.security.SecurityScheme;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityRequirement;
+import org.eclipse.microprofile.asyncapi.models.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.models.servers.Server;
-import org.eclipse.microprofile.openapi.models.servers.ServerVariable;
-import org.eclipse.microprofile.openapi.models.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.servers.ServerVariable;
+import org.eclipse.microprofile.asyncapi.models.tags.Tag;
 import org.eclipse.microprofile.openapi.spi.OASFactoryResolver;
 
 /**
@@ -68,7 +68,7 @@ public final class OASFactory {
      * <pre><code>OASFactory.createObject(Info.class).title("Airlines").description("Airlines APIs").version("1.0.0");
      * </code></pre>
      * @param <T> describes the type parameter
-     * @param clazz represents a model which extends the {@link org.eclipse.microprofile.openapi.models.Constructible} interface
+     * @param clazz represents a model which extends the {@link Constructible} interface
      *
      * @return a new instance of the requested model class
      * 
@@ -89,7 +89,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.ExternalDocumentation} instance.
+     * This method creates a new {@link ExternalDocumentation} instance.
      *
      * @return a new ExternalDocumentation instance
      */
@@ -161,7 +161,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.info.Contact} instance.
+     * This method creates a new {@link Contact} instance.
      *
      * @return a new Contact instance
      */
@@ -179,7 +179,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.info.License} instance.
+     * This method creates a new {@link License} instance.
      *
      * @return a new License instance
      */
@@ -305,7 +305,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.security.SecurityRequirement} instance.
+     * This method creates a new {@link SecurityRequirement} instance.
      *
      * @return a new SecurityRequirement instance
      */
@@ -314,7 +314,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.security.SecurityScheme} instance.
+     * This method creates a new {@link SecurityScheme} instance.
      *
      * @return a new SecurityScheme instance
      */
@@ -332,7 +332,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.servers.ServerVariable} instance.
+     * This method creates a new {@link ServerVariable} instance.
      *
      * @return a new ServerVariable instance
      */
@@ -341,7 +341,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.tags.Tag} instance.
+     * This method creates a new {@link Tag} instance.
      *
      * @return a new Tag instance
      */

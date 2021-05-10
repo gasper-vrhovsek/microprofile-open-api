@@ -1,7 +1,7 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.channel.amqp;
 
-import org.eclipse.microprofile.openapi.models.Constructible;
-import org.eclipse.microprofile.openapi.models.Extensible;
+import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.Extensible;
 
 /**
  * Defines the queue properties when {@code is}={@code queue}

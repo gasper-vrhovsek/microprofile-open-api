@@ -3,8 +3,7 @@ package org.eclipse.microprofile.asyncapi.annotations;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.annotations.components.Message;
 import org.eclipse.microprofile.asyncapi.annotations.components.OperationTrait;
-import org.eclipse.microprofile.openapi.annotations.ExternalDocumentation;
-import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
 
 public @interface Operation {
     // TODO docs
