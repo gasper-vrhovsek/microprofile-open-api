@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 public @interface Components {
-    // TODO finish annotation
+    // TODO docs
 
     /**
      *

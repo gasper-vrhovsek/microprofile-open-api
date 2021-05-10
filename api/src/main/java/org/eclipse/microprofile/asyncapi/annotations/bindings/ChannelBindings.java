@@ -4,10 +4,16 @@ import org.eclipse.microprofile.asyncapi.annotations.bindings.channel.AmqpBindin
 import org.eclipse.microprofile.asyncapi.annotations.bindings.channel.WebsocketsBindings;
 
 public @interface ChannelBindings {
-    // TODO annotation
-    // TODO name parameter
-
+    // TODO docs
+    /**
+     *
+     * @return
+     */
     WebsocketsBindings ws() default @WebsocketsBindings();
 
+    /**
+     *
+     * @return
+     */
     AmqpBindings amqp() default @AmqpBindings();
 }

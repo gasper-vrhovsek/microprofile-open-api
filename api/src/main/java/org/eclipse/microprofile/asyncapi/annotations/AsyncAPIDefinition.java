@@ -41,8 +41,6 @@ public @interface AsyncAPIDefinition {
      */
     Info info();
 
-    // TODO check if openapi definition is ok
-
     /**
      * Any additional external documentation for the API
      *
