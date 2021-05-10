@@ -16,8 +16,6 @@
 
 package org.eclipse.microprofile.asyncapi.annotations.security;
 
-import org.eclipse.microprofile.asyncapi.annotations.security.SecurityScheme;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
