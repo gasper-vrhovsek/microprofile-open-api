@@ -1,5 +1,22 @@
 package org.eclipse.microprofile.asyncapi.annotations.bindings.operation;
 
 public @interface HttpBindings {
-    // TODO
+    // TODO docs
+    /**
+     *
+     * @return
+     */
+    String type() default "";
+
+    /**
+     *
+     * @return
+     */
+    String method() default "";
+
+    /**
+     *
+     * @return
+     */
+    String bindingVersion() default "";
 }
