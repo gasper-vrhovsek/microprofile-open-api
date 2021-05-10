@@ -1,8 +1,31 @@
 package org.eclipse.microprofile.asyncapi.annotations;
 
+import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
+
 public @interface Parameter {
+    // TODO docs
 
-    // TODO this annotation
+    /**
+     *
+     * @return
+     */
+    String description() default "";
 
-    // TODO name parameter
+    /**
+     *
+     * @return
+     */
+    Schema schema() default @Schema();
+
+    /**
+     *
+     * @return
+     */
+    String location() default "";
+
+    /**
+     *
+     * @return
+     */
+    String name() default "";
 }
