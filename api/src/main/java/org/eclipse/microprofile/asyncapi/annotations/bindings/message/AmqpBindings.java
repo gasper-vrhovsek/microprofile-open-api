@@ -1,23 +1,27 @@
 package org.eclipse.microprofile.asyncapi.annotations.bindings.message;
 
+/**
+ * This object contains information about the message representation in AMQP.
+ */
 public @interface AmqpBindings {
-    // TODO docs
-
     /**
+     * MIME encoding for the message content.
      *
-     * @return
-     */
+     * @return contentEncoding property
+     * */
     String contentEncoding() default "";
 
     /**
+     * Application-specific message type
      *
-     * @return
-     */
+     * @return message type property
+     * */
     String messageType() default "";
 
     /**
+     * Version of this binding. If omitted, "latest" MUST be assumed.
      *
-     * @return
-     */
+     * @return binding version property
+     * */
     String bindingBersion() default "";
 }

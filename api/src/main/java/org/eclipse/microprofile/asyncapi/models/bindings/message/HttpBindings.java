@@ -4,6 +4,9 @@ import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 
+/**
+ * This object contains information about the message representation in HTTP.
+ */
 public interface HttpBindings extends Constructible, VersionableBinding<HttpBindings> {
     /**
      * Returns a Schema object containing the definitions for HTTP-specific headers.

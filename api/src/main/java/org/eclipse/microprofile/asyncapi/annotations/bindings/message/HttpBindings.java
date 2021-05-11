@@ -2,17 +2,22 @@ package org.eclipse.microprofile.asyncapi.annotations.bindings.message;
 
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
 
+/**
+ * This object contains information about the message representation in HTTP.
+ */
 public @interface HttpBindings {
-    // TODO docs
     /**
+     * Schema object containing the definitions for HTTP-specific headers.
+     * This schema MUST be of type {@code object} and have a {@code properties} key.
      *
-     * @return
-     */
+     * @return headers property
+     * */
     Schema headers() default @Schema();
 
     /**
+     * Version of this binding. If omitted, "latest" MUST be assumed.
      *
-     * @return
-     */
+     * @return binding version property
+     * */
     String bindingVersion() default "";
 }

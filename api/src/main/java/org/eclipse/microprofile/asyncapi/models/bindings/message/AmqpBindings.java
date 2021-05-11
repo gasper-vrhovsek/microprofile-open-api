@@ -3,6 +3,9 @@ package org.eclipse.microprofile.asyncapi.models.bindings.message;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 
+/**
+ * This object contains information about the message representation in AMQP.
+ */
 public interface AmqpBindings extends Constructible, VersionableBinding<AmqpBindings> {
     /**
      * Returns a MIME encoding for the message content.
