@@ -23,6 +23,17 @@ public interface AmqpQueue extends Constructible, Extensible<AmqpQueue> {
     void setName(String name);
 
     /**
+     * Sets the name of the queue. It MUST NOT exceed 255 characters.
+     *
+     * @param name queue name
+     * @return amqpQueue instance with the name property set
+     * */
+    default AmqpQueue name(String name) {
+        setName(name);
+        return this;
+    }
+
+    /**
      * Returns true or false whether the queue should survive broker restarts or not.
      *
      * @return queue durable property
@@ -35,6 +46,17 @@ public interface AmqpQueue extends Constructible, Extensible<AmqpQueue> {
      * @param durable queue durable property
      * */
     void setDurable(boolean durable);
+
+    /**
+     * Sets the durable property, whether the queue should survive broker restarts or not.
+     *
+     * @param durable queue durable property
+     * @return amqpQueue instance with the durable property set
+     * */
+    default AmqpQueue durable(boolean durable) {
+        setDurable(durable);
+        return this;
+    }
 
     /**
      * Returns true or falsw whether the queue should be used only by one connection or not.

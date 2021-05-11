@@ -3,30 +3,35 @@ package org.eclipse.microprofile.asyncapi.annotations.bindings.channel;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.channel.amqp.AmqpExchange;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.channel.amqp.AmqpQueue;
 
+/**
+ * This object contains information about the channel representation in AMQP
+ * */
 public @interface AmqpBindings {
-    // TODO
-
     /**
+     * Definition of what type the channel is. Can be either {@code queue} or {@code routingKey} (default)
      *
-     * @return
-     */
+     * @return type of channel
+     * */
     String is() default "";
 
     /**
+     * When {@code is}={@code routingKey}, object that defines the exchange properties.
      *
-     * @return
-     */
+     * @return the exchange property
+     * */
     AmqpExchange exchange() default @AmqpExchange();
 
     /**
+     * When {@code is}={@code queue}, the object that defines the queue properties.
      *
-     * @return
-     */
+     * @return the queue property
+     * */
     AmqpQueue queue() default @AmqpQueue();
 
     /**
+     * The version of this binding. If omitted, "latest" MUST be assumed.
      *
-     * @return
+     * @return bindingVersion
      */
     String bindingVersion() default "";
 }
