@@ -19,7 +19,6 @@ package org.eclipse.microprofile.asyncapi.annotations.security;
 
 import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeIn;
 import org.eclipse.microprofile.asyncapi.annotations.enums.SecuritySchemeType;
-// TODO oauth i think is not in asyncapi
 import org.eclipse.microprofile.openapi.annotations.security.OAuthFlows;
 
 import java.lang.annotation.ElementType;
@@ -41,8 +40,6 @@ import java.lang.annotation.Target;
 @Repeatable(SecuritySchemes.class)
 @Inherited
 public @interface SecurityScheme {
-    // TODO check types if compatible with asyncapi
-
     /**
      * The name of this SecurityScheme. Used as the key to add this security scheme to the 'securitySchemes' map under Components object.
      * <p>
