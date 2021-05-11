@@ -4,6 +4,9 @@ import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 
+/***
+ * This object contains information about the operation representation in Kafka.
+ */
 public interface KafkaBindings extends Constructible, VersionableBinding<KafkaBindings> {
 
     /**

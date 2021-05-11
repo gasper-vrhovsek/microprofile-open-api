@@ -3,6 +3,9 @@ package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 
+/**
+ * This object contains information about the operation representation in MQTT.
+ */
 public interface MqttBindings extends Constructible, VersionableBinding<MqttBindings> {
 
     /**
