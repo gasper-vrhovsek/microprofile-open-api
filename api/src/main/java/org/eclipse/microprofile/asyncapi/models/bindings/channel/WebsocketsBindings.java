@@ -1,5 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.channel;
 
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 
@@ -9,7 +10,7 @@ import org.eclipse.microprofile.asyncapi.models.Constructible;
  * way, there's only one channel and its characteristics are strongly related to the protocol used for the handshake,
  * i.e., HTTP.
  * */
-public interface WebsocketsBindings extends Constructible {
+public interface WebsocketsBindings extends Constructible, VersionableBinding<WebsocketsBindings> {
     /**
      * Returns the HTTP method to use when establishing the connection. Its value MUST be either {@code GET} or {@code POST}.
      *

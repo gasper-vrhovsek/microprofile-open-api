@@ -1,9 +1,10 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.media.Schema;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 
-public interface KafkaBindings extends Constructible {
+public interface KafkaBindings extends Constructible, VersionableBinding<KafkaBindings> {
 
     /**
      * Returns id of the consumer group.
@@ -52,31 +53,6 @@ public interface KafkaBindings extends Constructible {
      * */
     default KafkaBindings clientId(Schema clientId) {
         setClientId(clientId);
-        return this;
-    }
-
-    /**
-     * Returns the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @return binding version property
-     * */
-    String getBindingVersion();
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * */
-    void setBindingVersion(String bindingVersion);
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * @return bindings instance with the headers property set
-     * */
-    default KafkaBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }

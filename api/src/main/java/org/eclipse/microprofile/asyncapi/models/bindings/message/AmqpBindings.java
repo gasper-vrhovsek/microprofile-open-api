@@ -1,8 +1,9 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.message;
 
 import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 
-public interface AmqpBindings extends Constructible {
+public interface AmqpBindings extends Constructible, VersionableBinding<AmqpBindings> {
     /**
      * Returns a MIME encoding for the message content.
      *
@@ -50,19 +51,6 @@ public interface AmqpBindings extends Constructible {
      * */
     default AmqpBindings messageType(String messageType) {
         setMessageType(messageType);
-        return this;
-    }
-
-    /**
-     * TODO docs
-     * @return
-     */
-    String getBindingVersion();
-
-    void setBindingVersion(String bindingVersion);
-
-    default AmqpBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }

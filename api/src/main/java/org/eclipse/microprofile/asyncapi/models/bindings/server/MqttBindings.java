@@ -1,12 +1,13 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.server;
 
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.bindings.server.mqtt.LastWill;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 
 /**
  * This object contains information about the server representation in MQTT.
  */
-public interface MqttBindings extends Constructible {
+public interface MqttBindings extends Constructible, VersionableBinding<MqttBindings> {
 
     /**
      * Returns the client identifier
@@ -105,31 +106,6 @@ public interface MqttBindings extends Constructible {
      * */
     default MqttBindings keepAlive(int keepAlive) {
         setKeepAlive(keepAlive);
-        return this;
-    }
-
-    /**
-     * Returns the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @return binding version property
-     * */
-    String getBindingVersion();
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * */
-    void setBindingVersion(String bindingVersion);
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * @return bindings instance with the headers property set
-     * */
-    default MqttBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }

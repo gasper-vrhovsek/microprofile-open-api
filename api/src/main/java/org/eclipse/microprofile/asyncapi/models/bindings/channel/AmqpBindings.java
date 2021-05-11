@@ -1,5 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.channel;
 
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 import org.eclipse.microprofile.asyncapi.models.bindings.channel.amqp.AmqpExchange;
 import org.eclipse.microprofile.asyncapi.models.bindings.channel.amqp.AmqpQueue;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
@@ -7,7 +8,7 @@ import org.eclipse.microprofile.asyncapi.models.Constructible;
 /**
  * This object contains information about the channel representation in AMQP
  * */
-public interface AmqpBindings extends Constructible {
+public interface AmqpBindings extends Constructible, VersionableBinding<AmqpBindings> {
     /**
      * Returns a definition of what type the channel is. Can be either {@code queue} or {@code routingKey} (default)
      *
@@ -80,31 +81,6 @@ public interface AmqpBindings extends Constructible {
      * */
     default AmqpBindings queue(AmqpQueue queue) {
         setQueue(queue);
-        return this;
-    }
-
-    /**
-     * Returns the version of this binding. If ommited, "latest" MUST be assumed.
-     *
-     * @return the binding version
-     * */
-    String getBindingVersion();
-
-    /**
-     * Sets the version of this binding. If ommited, "latest" MUST be assumed.
-     *
-     * @param bindingVersion the binding version
-     * */
-    void setBindingVersion(String bindingVersion);
-
-    /**
-     * Sets the version of this binding. If ommited, "latest" MUST be assumed.
-     *
-     * @param bindingVersion the binding version
-     * @return bindings instance with the bindingVersion property set
-     * */
-    default AmqpBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }

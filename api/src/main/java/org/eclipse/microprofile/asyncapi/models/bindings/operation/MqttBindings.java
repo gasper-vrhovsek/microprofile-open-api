@@ -1,8 +1,9 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 
 import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 
-public interface MqttBindings extends Constructible {
+public interface MqttBindings extends Constructible, VersionableBinding<MqttBindings> {
 
     /**
      * Returns the Quality of Service (QoS) levels for the message flow between client and server. Its value MUST be
@@ -54,31 +55,6 @@ public interface MqttBindings extends Constructible {
      * */
     default MqttBindings retain(boolean retain) {
         setRetain(retain);
-        return this;
-    }
-
-    /**
-     * Returns the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @return binding version property
-     * */
-    String getBindingVersion();
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * */
-    void setBindingVersion(String bindingVersion);
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * @return bindings instance with the headers property set
-     * */
-    default MqttBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }

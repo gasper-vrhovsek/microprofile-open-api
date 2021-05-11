@@ -1,11 +1,12 @@
 package org.eclipse.microprofile.asyncapi.models.bindings.operation;
 
 import org.eclipse.microprofile.asyncapi.models.Constructible;
+import org.eclipse.microprofile.asyncapi.models.bindings.VersionableBinding;
 
 /**
  * This object contains information about the operation representation in AMQP.
  * */
-public interface AmqpBindings extends Constructible {
+public interface AmqpBindings extends Constructible, VersionableBinding<AmqpBindings> {
     /**
      * Returns TTL (Time-To-Live) for the message. It Must be greater than or equal to zero.
      *
@@ -253,31 +254,6 @@ public interface AmqpBindings extends Constructible {
      * */
     default AmqpBindings ack(boolean ack) {
         setAck(ack);
-        return this;
-    }
-
-    /**
-     * Returns the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @return binding version property
-     * */
-    String getBindingVersion();
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * */
-    void setBindingVersion(String bindingVersion);
-
-    /**
-     * Set the version of this binding. If omitted, "latest" MUST be assumed.
-     *
-     * @param bindingVersion binding version property
-     * @return bindings instance with the headers property set
-     * */
-    default AmqpBindings bindingVersion(String bindingVersion) {
-        setBindingVersion(bindingVersion);
         return this;
     }
 }
