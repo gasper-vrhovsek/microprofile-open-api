@@ -6,8 +6,6 @@ package org.eclipse.microprofile.asyncapi.annotations.components;
  * For specifying and computing the location of a Correlation ID, a runtime expression is used.
  * */
 public @interface CorrelationId {
-    // TODO docs
-
     /**
      * Optional description of the identifier. <a href="http://spec.commonmark.org/">CommonMark syntax</a> can be
      * used for rich text representation.
