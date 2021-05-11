@@ -133,8 +133,8 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
      *
      * @param tag a tag for API documentation control
      **/
-
     void removeTag(String tag);
+
     /**
      * Sets a list of tags for API documentation control. Tags can be used for logical grouping of operations.
      *
@@ -147,7 +147,7 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
     }
 
     /**
-     * Sets additional external documentation for this operation.
+     * Returns additional external documentation for this operation.
      *
      * @return externalDocs property
      **/
