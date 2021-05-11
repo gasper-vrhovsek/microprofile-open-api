@@ -1,5 +1,6 @@
 package org.eclipse.microprofile.asyncapi.models.components;
 
+import org.eclipse.microprofile.asyncapi.models.Operation;
 import org.eclipse.microprofile.asyncapi.models.bindings.OperationBindings;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 import org.eclipse.microprofile.asyncapi.models.Extensible;
@@ -119,6 +120,21 @@ public interface OperationTrait extends Constructible, Extensible<OperationTrait
      */
     void setTags(Tag tags);
 
+    /**
+     * Adds the given tag to this Operation's list of tags.
+     *
+     * @param tag a tag for API documentation control
+     * @return the current Operation object
+     **/
+    Operation addTag(String tag);
+
+    /**
+     * Removes the given tag to this Operation's list of tags.
+     *
+     * @param tag a tag for API documentation control
+     **/
+
+    void removeTag(String tag);
     /**
      * Sets a list of tags for API documentation control. Tags can be used for logical grouping of operations.
      *
