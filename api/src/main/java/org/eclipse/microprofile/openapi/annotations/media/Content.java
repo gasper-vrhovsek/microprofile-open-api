@@ -17,6 +17,8 @@
 
 package org.eclipse.microprofile.openapi.annotations.media;
 
+import org.eclipse.microprofile.asyncapi.models.media.ExampleObject;
+
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

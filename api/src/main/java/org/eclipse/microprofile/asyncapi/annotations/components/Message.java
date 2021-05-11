@@ -4,7 +4,7 @@ import org.eclipse.microprofile.asyncapi.annotations.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
 import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
-import org.eclipse.microprofile.openapi.annotations.media.ExampleObject;
+import org.eclipse.microprofile.asyncapi.models.media.ExampleObject;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -37,7 +37,7 @@ public @interface Message {
      *
      * @return payload property
      */
-    // TODO could be any but defaults to Schema
+    // TODO could be any but defaults to Schema?
     Schema payload() default @Schema();
 
     /**

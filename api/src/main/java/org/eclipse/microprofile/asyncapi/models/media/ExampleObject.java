@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.annotations.media;
+package org.eclipse.microprofile.asyncapi.models.media;
 
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
