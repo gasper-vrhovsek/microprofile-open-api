@@ -4,6 +4,7 @@ import org.eclipse.microprofile.asyncapi.annotations.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
 import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
+import org.eclipse.microprofile.openapi.annotations.media.ExampleObject;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
@@ -15,74 +16,120 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 public @interface Message {
-    // TODO documentation
-
     /**
-     * @return
+     * Machine-friendly name for the message.
+     *
+     * @return name property
      */
     String name() default "";
 
     /**
-     * @return
+     * Schema definition of the application headers. Schema MUST be of type "object". It MUST NOT define
+     * the protocol headers.
+     *
+     * @return headers property
      */
     Schema headers() default @Schema();
 
     /**
-     * @return
+     * Definition of the message payload. It can be of any type but defaults to
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">Schema object</a>.
+     *
+     * @return payload property
      */
     // TODO could be any but defaults to Schema
     Schema payload() default @Schema();
 
     /**
-     * @return
+     * Definition of the correlation ID used for message tracing or matching.
+     *
+     * @return correlationId property
      */
     CorrelationId correlationId() default @CorrelationId();
 
     /**
-     * @return
+     * A string containing the name of the schema format used to define the message payload. If omitted,
+     * implementations should parse the payload as a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#schemaObject">
+     * Schema object</a>.
+     * Check out the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">
+     * supported schema formats table</a>
+     * for more information. Custom values are allowed but their implementation is OPTIONAL. A custom value MUST NOT refer
+     * to one of the schema formats listed in the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectSchemaFormatTable">table</a>.
+     *
+     * @return schemaFormat property
      */
     String schemaFormat() default "";
 
     /**
-     * @return
+     * Content type to use when encoding/decoding a message's payload. The value MUST be a specific media type
+     * (e.g. {@code application/json}). When omitted, the value MUST be the one specified on the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#defaultContentTypeString">defaultContentType</a> field.
+     *
+     * @return contentType property
      */
     String contentType() default "";
 
     /**
-     * @return
+     * Human-friendly title for the message.
+     *
+     * @return title property
      */
     String title() default "";
 
     /**
-     * @return
+     * Short summary of what the message is about.
+     *
+     * @return summary property
      */
     String summary() default "";
 
     /**
-     * @return
+     * Verbose explanation of the message. <a href="http://spec.commonmark.org/">CommonMark syntax</a> can be used for
+     * rich text representation.
+     *
+     * @return description property
      */
     String description() default "";
 
     /**
-     * @return
+     * A list of tags for API documentation control. Tags can be used for logical grouping of messages.
+     *
+     * @return tags property
      */
     Tag[] tags() default {};
 
     /**
-     * @return
+     * Additional external documentation for this message.
+     *
+     * @return externalDocs property
      */
     ExternalDocumentation externalDocs() default @ExternalDocumentation();
 
     /**
-     * @return
+     * A map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the message.
+     *
+     * @return Bindings property
      */
     MessageBindings messageBindings() default @MessageBindings();
 
-    // TODO how to represent examples in an annotation
-//    Object[] examples() default {};
 
     /**
-     * @return
+     * Array of key/value pairs where keys MUST be either headers and/or payload. Values MUST contain examples
+     * that validate against the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectHeaders">headers</a>
+     * or <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectPayload">payload</a> fields, respectively.
+     *
+     * @return examples property
+     */
+    ExampleObject[] examples() default {};
+
+    /**
+     * Array of traits to apply to the message object. Traits MUST be merged into the message object using the
+     * <a href="https://tools.ietf.org/html/rfc7386">JSON Merge Patch</a> algorithm in the same order they are defined
+     * here. The resulting object MUST be a valid
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">Message Object</a>.
+     *
+     * @return traits property
      */
     MessageTrait[] traits() default {};
 
