@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.eclipse.microprofile.openapi.models.security;
+package org.eclipse.microprofile.asyncapi.models.security;
 
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 import org.eclipse.microprofile.asyncapi.models.Extensible;

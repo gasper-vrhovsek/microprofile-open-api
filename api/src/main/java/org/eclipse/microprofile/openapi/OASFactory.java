@@ -40,8 +40,8 @@ import org.eclipse.microprofile.openapi.models.parameters.Parameter;
 import org.eclipse.microprofile.openapi.models.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.models.responses.APIResponse;
 import org.eclipse.microprofile.openapi.models.responses.APIResponses;
-import org.eclipse.microprofile.openapi.models.security.OAuthFlow;
-import org.eclipse.microprofile.openapi.models.security.OAuthFlows;
+import org.eclipse.microprofile.asyncapi.models.security.OAuthFlow;
+import org.eclipse.microprofile.asyncapi.models.security.OAuthFlows;
 import org.eclipse.microprofile.asyncapi.models.security.SecurityRequirement;
 import org.eclipse.microprofile.asyncapi.models.security.SecurityScheme;
 import org.eclipse.microprofile.openapi.models.servers.Server;
@@ -287,7 +287,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.security.OAuthFlow} instance.
+     * This method creates a new {@link OAuthFlow} instance.
      *
      * @return a new OAuthFlow instance
      */
@@ -296,7 +296,7 @@ public final class OASFactory {
     }
 
     /**
-     * This method creates a new {@link org.eclipse.microprofile.openapi.models.security.OAuthFlows} instance.
+     * This method creates a new {@link OAuthFlows} instance.
      *
      * @return a new OAuthFlows instance
      */

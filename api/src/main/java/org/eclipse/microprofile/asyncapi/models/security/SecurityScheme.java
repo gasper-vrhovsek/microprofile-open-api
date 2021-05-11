@@ -20,8 +20,6 @@ package org.eclipse.microprofile.asyncapi.models.security;
 import org.eclipse.microprofile.asyncapi.models.Constructible;
 import org.eclipse.microprofile.asyncapi.models.Extensible;
 import org.eclipse.microprofile.asyncapi.models.Reference;
-// TODO oauthFlows i think are not in asynapi
-import org.eclipse.microprofile.openapi.models.security.OAuthFlows;
 
 /**
  * SecurityScheme
@@ -29,8 +27,6 @@ import org.eclipse.microprofile.openapi.models.security.OAuthFlows;
  * @see "https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#security-scheme-object"
  */
 public interface SecurityScheme extends Constructible, Extensible<SecurityScheme>, Reference<SecurityScheme> {
-    // TODO migrate to asyncapi
-
     /**
      * Type is a REQUIRED property that specifies the type of SecurityScheme instance.
      * <p>
@@ -38,7 +34,15 @@ public interface SecurityScheme extends Constructible, Extensible<SecurityScheme
      * </p>
      */
     public enum Type {
-        APIKEY("apiKey"), HTTP("http"), OAUTH2("oauth2"), OPENIDCONNECT("openIdConnect");
+        USERPASSWORD("userPassword"),
+        APIKEY("apiKey"),
+        X509("X509"),
+        SYMMETRIC_ENCRYPTION("symmetricEncryption"),
+        ASYMMETRIC_ENCRYPTION("asymmetricEncryption"),
+        HTTP_API_KEY("httpApiKey"),
+        HTTP("http"),
+        OAUTH2("oauth2"),
+        OPENIDCONNECT("openIdConnect");
 
         private final String value;
 
@@ -59,7 +63,13 @@ public interface SecurityScheme extends Constructible, Extensible<SecurityScheme
      * </p>
      */
     public enum In {
-        COOKIE("cookie"), HEADER("header"), QUERY("query");
+        // for apiKey
+        USER("user"),
+        PASSWORD("password"),
+        // for httpApiKey
+        COOKIE("cookie"),
+        HEADER("header"),
+        QUERY("query");
 
         private final String value;
 
