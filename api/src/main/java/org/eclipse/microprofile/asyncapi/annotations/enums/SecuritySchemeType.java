@@ -18,7 +18,16 @@
 package org.eclipse.microprofile.asyncapi.annotations.enums;
 
 public enum SecuritySchemeType {
-    DEFAULT(""), APIKEY("apiKey"), HTTP("http"), OPENIDCONNECT("openIdConnect"), OAUTH2("oauth2");
+    DEFAULT(""),
+    USERPASSWORD("userPassword"),
+    APIKEY("apiKey"),
+    X509("X509"),
+    SYMMETRIC_ENCRYPTION("symmetricEncryption"),
+    ASYMMETRIC_ENCRYPTION("asymmetricEncryption"),
+    HTTP_API_KEY("httpApiKey"),
+    HTTP("http"),
+    OPENIDCONNECT("openIdConnect"),
+    OAUTH2("oauth2");
 
     private String value;
 

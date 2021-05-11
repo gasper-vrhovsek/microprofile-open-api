@@ -18,7 +18,12 @@
 package org.eclipse.microprofile.asyncapi.annotations.enums;
 
 public enum SecuritySchemeIn {
-    DEFAULT(""), HEADER("header"), QUERY("query"), COOKIE("cookie");
+    DEFAULT(""),
+    USER("user"),
+    PASSWORD("password"),
+    HEADER("header"),
+    QUERY("query"),
+    COOKIE("cookie");
 
     private String value;
 
