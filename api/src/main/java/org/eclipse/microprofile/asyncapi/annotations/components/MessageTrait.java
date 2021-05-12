@@ -1,6 +1,10 @@
 package org.eclipse.microprofile.asyncapi.annotations.components;
 
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
+import org.eclipse.microprofile.asyncapi.annotations.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tags;
+import org.eclipse.microprofile.asyncapi.models.media.ExampleObject;
 
 /**
  * Describes a trait that MAY be applied to a <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObject">
@@ -36,4 +40,72 @@ public @interface MessageTrait {
      * @return schemaFormat property
      */
     String schemaFormat() default "";
+
+    /**
+     * The content type to use when encoding/decoding a message's payload. The value MUST be a specific media type
+     * (e.g. {@code application/json}). When omitted, the value MUST be the one specified on the
+     * <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#defaultContentTypeString">defaultContentType</a> field.
+     *
+     * @return contentType property
+     */
+    String contentType() default "";
+
+    /**
+     * Machine-friendly name for the message.
+     *
+     * @return name property
+     */
+    String name() default "";
+
+    /**
+     * A human-friendly title for the message.
+     *
+     * @return title property
+     */
+    String title() default "";
+
+    /**
+     * A short summary of what the message is about.
+     *
+     * @return summary property
+     */
+    String summary() default "";
+
+    /**
+     * A verbose explanation of the message. <a href="http://spec.commonmark.org/">CommonMark syntax</a> can be used for
+     * rich text representation.
+     *
+     * @return description property
+     */
+    String description() default "";
+
+    /**
+     * A list of tags for API documentation control. Tags can be used for logical grouping of messages.
+     *
+     * @return tags property
+     */
+    Tags tags() default @Tags;
+
+    /**
+     * Additional external documentation for this message.
+     *
+     * @return externalDocs property
+     */
+    ExternalDocumentation externalDocs() default @ExternalDocumentation;
+
+    /**
+     * A map where the keys describe the name of the protocol and the values describe protocol-specific definitions for the message.
+     *
+     * @return Bindings property
+     */
+    MessageBindings bindings() default @MessageBindings;
+
+    /**
+     * An array of key/value pairs where keys MUST be either headers and/or payload. Values MUST contain examples
+     * that validate against the <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectHeaders">headers</a>
+     * or <a href="https://github.com/asyncapi/spec/blob/master/spec/asyncapi.md#messageObjectPayload">payload</a> fields, respectively.
+     *
+     * @return examples property
+     */
+    ExampleObject[] examples() default {};
 }
