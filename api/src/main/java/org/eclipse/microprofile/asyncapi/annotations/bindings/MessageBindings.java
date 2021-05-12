@@ -5,30 +5,35 @@ import org.eclipse.microprofile.asyncapi.annotations.bindings.message.HttpBindin
 import org.eclipse.microprofile.asyncapi.annotations.bindings.message.KafkaBindings;
 import org.eclipse.microprofile.asyncapi.annotations.bindings.message.MqttBindings;
 
+/**
+ * Map describing protocol-specific definitions for a server.
+ */
 public @interface MessageBindings {
-    // TODO
-
     /**
+     * Protocol-specific information for an HTTP server.
      *
-     * @return
+     * @return bindings object for this specific protocol
      */
     HttpBindings http() default @HttpBindings();
 
     /**
+     * Protocol-specific information for an Kafka server.
      *
-     * @return
+     * @return bindings object for this specific protocol
      */
     KafkaBindings kafka() default @KafkaBindings();
 
     /**
+     * Protocol-specific information for an AMQP server.
      *
-     * @return
+     * @return bindings object for this specific protocol
      */
     AmqpBindings amqp() default @AmqpBindings();
 
     /**
+     * Protocol-specific information for an MQTT server.
      *
-     * @return
+     * @return bindings object for this specific protocol
      */
     MqttBindings mqtt() default @MqttBindings();
 }
