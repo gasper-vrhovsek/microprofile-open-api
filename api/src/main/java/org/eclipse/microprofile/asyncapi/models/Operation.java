@@ -16,7 +16,6 @@ import java.util.List;
  * describes messages that are sent by the chat application.
  * </p>
  */
-// TODO look into common interface with OperationTrait org.eclipse.microprofile.asyncapi.models.components.OperationTrait
 public interface Operation extends Constructible, Extensible<Operation> {
 
     /**
@@ -51,7 +50,7 @@ public interface Operation extends Constructible, Extensible<Operation> {
     }
 
     /**
-     * Returna a short summary of what the operation is about.
+     * Returns a short summary of what the operation is about.
      *
      * @return summary property
      */

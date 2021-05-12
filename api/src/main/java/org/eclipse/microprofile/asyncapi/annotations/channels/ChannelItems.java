@@ -8,11 +8,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * This object represents an array of channel items that can be specified for the TODO definition level.
- *
- * TODO see SecurityRequirements javaDoc
+ * This object represents an array of channel items that can be specified for the operation or at definition level.
  **/
-
 @Target({ ElementType.METHOD, ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
