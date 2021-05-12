@@ -1,24 +1,29 @@
 package org.eclipse.microprofile.asyncapi.apps.airlines;
 
 import org.eclipse.microprofile.asyncapi.annotations.AsyncAPIDefinition;
+import org.eclipse.microprofile.asyncapi.annotations.ExternalDocumentation;
 import org.eclipse.microprofile.asyncapi.annotations.Operation;
+import org.eclipse.microprofile.asyncapi.annotations.bindings.MessageBindings;
 import org.eclipse.microprofile.asyncapi.annotations.channels.ChannelItem;
 import org.eclipse.microprofile.asyncapi.annotations.components.Components;
 import org.eclipse.microprofile.asyncapi.annotations.components.CorrelationId;
 import org.eclipse.microprofile.asyncapi.annotations.components.Message;
+import org.eclipse.microprofile.asyncapi.annotations.components.MessageTrait;
+import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
 import org.eclipse.microprofile.asyncapi.annotations.identifier.Identifier;
+import org.eclipse.microprofile.asyncapi.annotations.info.Contact;
 import org.eclipse.microprofile.asyncapi.annotations.info.Info;
+import org.eclipse.microprofile.asyncapi.annotations.info.License;
 import org.eclipse.microprofile.asyncapi.annotations.media.Schema;
+import org.eclipse.microprofile.asyncapi.annotations.media.SchemaProperty;
+import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
 import org.eclipse.microprofile.asyncapi.annotations.servers.Server;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.annotations.tags.Tags;
 import org.eclipse.microprofile.asyncapi.apps.airlines.consumer.PlaneCheckOutConsumer;
 import org.eclipse.microprofile.asyncapi.apps.airlines.event.Plane;
 import org.eclipse.microprofile.asyncapi.apps.airlines.producer.PlaneCheckInProducer;
-import org.eclipse.microprofile.asyncapi.annotations.enums.SchemaType;
-import org.eclipse.microprofile.asyncapi.annotations.info.Contact;
-import org.eclipse.microprofile.asyncapi.annotations.info.License;
-import org.eclipse.microprofile.asyncapi.annotations.media.SchemaProperty;
-import org.eclipse.microprofile.asyncapi.annotations.security.SecurityRequirement;
-import org.eclipse.microprofile.asyncapi.annotations.tags.Tag;
+import org.eclipse.microprofile.asyncapi.models.media.ExampleObject;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -128,9 +133,27 @@ import java.util.Set;
                                         description = "Default correlation ID",
                                         location = "$message.header#/correlationId"
                                 ),
-                                // TODO finish traits
                                 traits = {
-
+                                        @MessageTrait(
+                                                headers = @Schema(),
+                                                correlationId = @CorrelationId(),
+                                                schemaFormat = "SomeFormat",
+                                                contentType = "application/json",
+                                                name = "CheckInPlane",
+                                                description = "Check in a plane",
+                                                title = "CheckInPlane",
+                                                tags = @Tags({
+                                                        @Tag(name = "plane"),
+                                                        @Tag(name = "check in"),
+                                                        @Tag(name = "airline")
+                                                }),
+                                                summary = "Message for plane check in",
+                                                externalDocs = @ExternalDocumentation(), // TODO
+                                                bindings = @MessageBindings(), // TODO
+                                                examples = {
+                                                        @ExampleObject() // TODO
+                                                }
+                                        )
                                 }
                         ),
                         @Message(
